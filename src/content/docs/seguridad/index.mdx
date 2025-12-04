@@ -1,0 +1,58 @@
+---
+title: Módulo de Seguridad
+description: Manual completo del Módulo de Seguridad del Sistema ASM Dashboard con guías de gestión de usuarios, permisos, accesos, auditoría y más.
+---
+
+import { Card, CardGrid } from '@astrojs/starlight/components';
+
+## Introducción
+
+El **Módulo de Seguridad** del Sistema ASM Dashboard es el centro de control para la administración de usuarios, permisos, accesos y políticas de seguridad del sistema. Este módulo permite a los administradores gestionar de forma centralizada todos los aspectos relacionados con la seguridad de la plataforma.
+
+### Características Principales
+
+- Gestión completa de usuarios y roles
+- Control granular de permisos por módulos y vistas
+- Monitoreo de sesiones activas en tiempo real
+- Auditoría completa de todas las acciones del sistema
+- Autenticación de dos factores (2FA)
+- Políticas de seguridad configurables
+
+### Requisitos de Acceso
+
+Para acceder al módulo de seguridad, el usuario debe:
+- Tener una cuenta activa en el sistema
+- Contar con el rol de **Administrador** o **Seguridad**
+- Tener los permisos necesarios asignados
+
+## Módulos Principales
+
+<CardGrid stagger>
+	<Card title="Dashboard de Seguridad" icon="dashboard">
+		Visualiza el resumen general del estado de seguridad con métricas clave, gráficos y sesiones activas.
+	</Card>
+	<Card title="Gestión de Usuarios" icon="user">
+		Crear, editar, activar/desactivar y eliminar usuarios del sistema con control completo.
+	</Card>
+	<Card title="Roles" icon="setting">
+		Crear y gestionar roles del sistema, asignando permisos granulares a cada uno.
+	</Card>
+	<Card title="Permisos" icon="lock">
+		Sistema avanzado para gestionar permisos por usuario, rol, módulo y vista específica.
+	</Card>
+	<Card title="Control de Accesos" icon="open-book">
+		Monitorear y gestionar todos los accesos e intentos de acceso al sistema en tiempo real.
+	</Card>
+	<Card title="Sesiones Activas" icon="smiley">
+		Monitoreo en tiempo real de todas las sesiones activas en el sistema.
+	</Card>
+	<Card title="Auditoría" icon="document">
+		Registro completo de todas las acciones y eventos para cumplimiento y análisis.
+	</Card>
+	<Card title="Autenticación 2FA" icon="approve-check">
+		Sistema de autenticación de dos factores para aumentar la seguridad de cuentas.
+	</Card>
+	<Card title="Políticas de Seguridad" icon="list">
+		Configuración centralizada de políticas y reglas de seguridad del sistema.
+	</Card>
+</CardGrid>
