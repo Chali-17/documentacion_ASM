@@ -1,0 +1,340 @@
+---
+title: "Módulo Finanzas y Pagos"
+description: "Documentación ampliada, elegante y profesional para el módulo financiero ASM."
+author: "American School of Management"
+pubDate: 2024-01-01
+category: "Finanzas"
+tags: ["finanzas", "pagos", "manual", "asm"]
+slug: "modulos-maria/finanzas"
+---
+
+<div align="center">
+
+#  **Manual de Usuario – Módulo Finanzas y Pagos**
+### **American School of Management**
+**Versión 2.1 | Actualizado 2024**
+
+---
+
+##  **Índice General**
+</div>
+
+- [1. Introducción](#1-introducción)
+- [2. Acceso al Módulo](#2-acceso-al-módulo)
+- [3. Submódulos del Sistema](#3-submódulos-del-sistema)
+- [4. Reportes Financieros](#4-reportes-financieros)
+- [5. Generación Masiva de Cuotas](#5-generación-masiva-de-cuotas)
+- [6. Comunicación y Mensajería](#6-comunicación-y-mensajería)
+- [7. Glosario](#7-glosario)
+
+---
+
+<div align="center">
+
+# 1. **Introducción**
+</div>
+
+El módulo **Finanzas y Pagos** es el núcleo administrativo encargado de gestionar toda la actividad económica generada por estudiantes del ASM.  
+Su diseño permite que el personal financiero pueda **aprobar pagos**, **conciliar transacciones**, **emitir reportes**, **gestionar cuotas**, **analizar métricas** y **comunicarse de forma estratégica con los estudiantes**.
+
+Este sistema integra todas las herramientas necesarias para garantizar una **operación financiera ordenada, transparente y eficiente**, reduciendo errores y permitiendo tomar decisiones basadas en información real y actualizada.
+
+---
+
+<div align="center">
+
+###  **Objetivos del Sistema**
+</div>
+
+- **Centralizar** toda la administración financiera escolar.
+- **Garantizar trazabilidad** de cada movimiento.
+- **Optimizar tiempos** de aprobación y conciliación.
+- **Minimizar errores humanos** mediante validaciones automáticas.
+- **Estandarizar procesos financieros** entre áreas y sedes.
+- **Facilitar reportes y análisis** para supervisores y dirección.
+
+> El módulo no solo registra pagos, **también interpreta, valida y gestiona escenarios financieros complejos**.
+
+---
+
+<div align="center">
+
+# 2. **Acceso al Módulo**
+</div>
+
+###  **Cómo ingresar**
+Acceder al módulo es sencillo, pero está protegido según permisos del usuario:
+
+1. Inicie sesión en el sistema ASM.  
+2. Desde el menú lateral izquierdo, seleccione **“Finanzas y Pagos”**.  
+3. Dependiendo de su rol, verá diferentes funcionalidades habilitadas.  
+
+---
+
+###  **Secciones principales**
+Cada una tiene un propósito específico:
+
+| Icono | Sección | Explicación Ampliada |
+|-------|---------|----------------------|
+| 📋 | **Aprobación Financiera** | Donde se revisan, verifican y aprueban pagos estudiantiles. Punto crítico para evitar fraudes o errores. |
+| 🏦 | **Conciliación Bancaria** | Cruza automáticamente movimientos bancarios vs. internos para validar exactitud. |
+| ⚙️ | **Configuración Financiera** | Ajustes globales del sistema: intereses, descuentos, bancos, parámetros. |
+| 📊 | **Dashboard Financiero** | Panel con indicadores y estadísticas financieras en tiempo real. |
+| 🧾 | **Estado de Cuenta** | Historial completo del estudiante: saldos, pagos, cuotas, mora, referencias. |
+| 💳 | **Gestión de Pagos** | Registro manual, correcciones, ajustes directos a estudiantes. |
+| 🔧 | **Mantenimientos** | Herramientas avanzadas para auditoría, reversión, correcciones masivas. |
+
+> Cada submódulo está diseñado para realizar tareas específicas sin sobrecargar al usuario con información innecesaria.
+
+---
+
+<div align="center">
+
+# 3. **Submódulos del Sistema**
+</div>
+
+---
+
+# 3.1 **Aprobación Financiera**
+
+Este submódulo es el **corazón operativo** del departamento de finanzas.  
+Aquí se analizan todos los pagos que los estudiantes reportan y se determina su validez.
+
+### 🔍 **Descripción ampliada**
+El usuario podrá:
+
+- Ver todos los pagos en estado *Pendiente*.  
+- Examinar cada comprobante (PDF o imagen).  
+- Comparar el monto contra la cuota programada.  
+- Detectar diferencias o errores.  
+- Aprobación instantánea con un clic.  
+- Rechazo justificado en casos de anomalías.  
+
+La aprobación correcta garantiza que el pago se aplique al **Kardex**, lo cual impacta en:
+
+- Estado académico  
+- Permisos de inscripción  
+- Acceso a evaluaciones  
+- Emisión de documentos  
+
+###  **Tabla ampliada**
+| Campo | Descripción Detallada |
+|--------|------------------------|
+| **Estudiante** | Identificación completa y carnet (permite validar identidad). |
+| **Programa** | Carrera actual (importante para cuotas y aranceles distintos). |
+| **Fecha Pago** | Fecha registrada en el comprobante. Se valida que no sea futura. |
+| **Monto** | Se compara con cuotas programadas. Diferencias deben revisarse. |
+| **Referencia** | Código único del banco. Detecta duplicados o errores. |
+| **Estado** | Pendiente / Aprobado / Rechazado. |
+| **Acciones** | Ver detalles, aprobar o rechazar. |
+
+---
+
+# 3.2 **Conciliación Bancaria**
+
+Es la parte más técnica del módulo:  
+**Asegura que lo que aparece en los bancos coincide EXACTAMENTE con los pagos registrados en ASM.**
+
+###  ¿Por qué es importante?
+- Detecta pagos no reportados.  
+- Detecta pagos falsos o alterados.  
+- Garantiza transparencia contable.  
+- Permite auditorías exactas.  
+
+###  **Ampliación del proceso**
+1. El banco genera un archivo con los movimientos del día.  
+2. Se carga al sistema.  
+3. El sistema interpreta el archivo automáticamente.  
+4. Busca coincidencias por:
+   - referencia
+   - monto
+   - fecha
+5. Clasifica los registros:
+   - Conciliados  
+   - Pendientes  
+   - Sin coincidencia  
+   - Erróneos  
+
+###  **Estados explicados**
+| Estado | Color | Significado Ampliado |
+|--------|--------|----------------------|
+| Importado | 🔵 | El banco envió el registro, pero aún no se validó. |
+| Conciliado | 🟢 | El pago coincide perfectamente con un registro interno. |
+| Rechazado | 🔴 | Error en referencia, pago inexistente o sospechoso. |
+| Sin coincidencia | 🟡 | El sistema no encontró un pago correspondiente. |
+
+> Un registro sin conciliar puede significar:  
+> un pago duplicado, pago no reportado por el estudiante o error del banco.
+
+---
+
+# 3.3 **Configuración Financiera**
+
+Este módulo controla **las reglas del juego financiero**.
+
+###  **Ampliación**
+Incluye:
+
+- Parámetros de mora  
+- Porcentaje de interés  
+- Días de gracia  
+- Bancos habilitados  
+- Tipos de pago disponibles  
+- Configuraciones de reportes  
+- Políticas de descuentos institucionales  
+
+Ejemplo:
+
+| Parámetro | Explicación ampliada |
+|-----------|----------------------|
+| **Días de gracia** | Tiempo adicional sin penalización. Mejora la experiencia estudiantil. |
+| **Interés diario de mora** | Penalización por atrasos. Debe ajustarse anualmente. |
+| **Descuento por pronto pago** | Incentivo financiero para evitar mora. |
+
+---
+
+# 3.4 **Dashboard Financiero**
+
+Vista general para **directores, coordinadores y personal contable**.
+
+###  **Descripción ampliada**
+Incluye:
+
+- Gráficos de ingresos por mes  
+- Listado de estudiantes con mora activa  
+- Tendencias de pagos  
+- Comparación por programa  
+- Indicadores automáticos  
+- Balance general de ingresos vs. pendientes  
+
+El dashboard es clave para:
+
+- Planificación financiera  
+- Ajustes presupuestarios  
+- Detección temprana de morosidad  
+- Mejora de estrategias de cobranza  
+
+---
+
+# 3.5 **Estado de Cuenta**
+
+El estado de cuenta es **la fuente de verdad financiera del estudiante**.
+
+Incluye:
+
+- Detalle de pagos realizados  
+- Cuotas pendientes  
+- Cuotas en mora  
+- Archivo de comprobantes  
+- Historial completo y ordenado  
+- Saldos reales  
+
+###  ¿Para qué sirve?
+- Validación académica  
+- Control interno  
+- Emisión de documentos  
+- Comunicación con estudiantes  
+- Procesos de graduación  
+
+---
+
+# 3.6 **Gestión de Pagos**
+
+###  **Ampliación de propósito**
+Permite registrar, corregir o ajustar pagos manuales cuando:
+
+- El banco envía movimientos especiales  
+- Un estudiante es beneficiado con un descuento  
+- Hay errores en el comprobante  
+- Se necesita rectificar un pago previo  
+
+Es un módulo muy delicado y requiere permisos especiales.
+
+---
+
+# 3.7 **Mantenimientos Financieros**
+
+Este bloque permite realizar operaciones avanzadas:
+
+- Ajustes masivos  
+- Reversión de pagos  
+- Edición de cuotas  
+- Auditorías del Kardex  
+- Correcciones administrativas especiales  
+
+Se utiliza **solo bajo supervisión**.
+
+---
+
+<div align="center">
+
+# 4. **Reportes Financieros**
+</div>
+
+Incluye reportes:
+
+- De ingresos  
+- De morosidad  
+- De conciliaciones  
+- De próximos pagos  
+
+Todos **exportables a PDF o Excel**, con estética profesional.
+
+---
+
+<div align="center">
+
+# 5. **Generación Masiva de Cuotas**
+</div>
+
+###  **Explicación ampliada**
+Permite crear cuotas para decenas o cientos de estudiantes al mismo tiempo.
+
+El sistema valida:
+
+- Período correcto  
+- Meses consecutivos  
+- Programas elegidos  
+- Estudiantes seleccionados  
+- Montos coherentes  
+
+Antes de confirmar, muestra **un resumen exacto** del impacto financiero.
+
+---
+
+<div align="center">
+
+# 6. **Comunicación y Mensajería**
+</div>
+
+Herramienta para enviar:
+
+- Recordatorios de pago  
+- Avisos de mora  
+- Confirmaciones  
+- Mensajes grupales  
+- Notificaciones personalizadas  
+
+Permite segmentar por:
+
+- Programa  
+- Estado financiero  
+- Estado académico  
+- Deuda acumulada  
+
+---
+
+<div align="center">
+
+# 7. **Glosario**
+</div>
+
+| Término | Definición |
+|---------|------------|
+| **Kardex** | Historial financiero propio del estudiante |
+| **Mora** | Cuota vencida sin pagar |
+| **Conciliación** | Validación banco ↔ sistema |
+| **Referencia** | Código bancario único |
+| **Cuota** | Pago programado mensual o periódico |
+
+---
