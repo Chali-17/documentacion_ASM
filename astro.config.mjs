@@ -1,19 +1,37 @@
-// @ts-check
 import { defineConfig } from 'astro/config';
 import starlight from '@astrojs/starlight';
+import logo from './public/logo.png';
 
-// https://astro.build/config
 export default defineConfig({
-	integrations: [
-		starlight({
-			title: 'ASM Dashboard - Documentación',
-			social: [{ icon: 'github', label: 'GitHub', href: 'https://github.com/withastro/starlight' }],
-			sidebar: [
-				{
-					label: 'Módulo de Seguridad',
-					autogenerate: { directory: 'seguridad' },
-				},
-			],
-		}),
-	],
+  integrations: [
+    starlight({
+      title: "ASM Dashboard – Documentación",
+      description: "Documentación oficial de los módulos ASM",
+
+      logo: {
+        src: logo,
+        alt: "ASM Logo"
+      },
+
+      sidebar: [
+        {
+          label: "Módulos del Sistema",
+          items: [
+            "modulos-maria/administracion",
+            "modulos-maria/inscripcion",
+            "modulos-maria/finanzas"
+          ]
+        }
+      ],
+
+      // Redes sociales
+      social: [
+        {
+          label: "GitHub",
+          icon: "github",
+          href: "https://github.com/americanschoolofmanagement"
+        }
+      ]
+    })
+  ]
 });

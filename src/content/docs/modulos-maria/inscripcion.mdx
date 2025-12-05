@@ -1,0 +1,769 @@
+---
+title: "Módulo Inscripción"
+description: "Documentación completa del sistema de inscripción de estudiantes en ASM"
+author: "American School of Management"
+pubDate: 2024-01-01
+category: "Inscripción"
+tags: ["inscripción", "estudiantes", "ficha", "contratos", "documentos", "firma digital", "asm"]
+slug: "modulos-maria/inscripcion"
+---
+##  Índice
+- [1. Introducción](#1-introducción)
+- [2. Acceso al Módulo](#2-acceso-al-módulo)
+- [3. Ficha de Inscripción](#3-ficha-de-inscripción)
+- [4. Contratos de Confidencialidad](#4-contratos-de-confidencialidad)
+- [5. Documentos](#5-documentos)
+- [6. Flujos de Aprobación](#6-flujos-de-aprobación)
+- [7. Periodos de Inscripción](#7-periodos-de-inscripción)
+- [8. Prospectos | ASR](#8-prospectos--asr)
+- [9. Consideraciones Importantes](#9-consideraciones-importantes)
+
+## 1. Introducción
+El módulo de **Inscripción** es el sistema centralizado que gestiona **todo el proceso de admisión** de nuevos estudiantes en el *American School of Management*. Es el proceso que transforma a un prospecto interesado en un estudiante matriculado oficialmente, capturando información completa, validando documentos, gestionando contratos legalmente vinculantes mediante firma digital, automatizando flujos de aprobación entre departamentos, controlando periodos académicos y realizando seguimiento de prospectos desde su primer contacto hasta la matrícula completa.
+
+### 1.2 Objetivos Principales
+Este módulo está diseñado para lograr seis objetivos fundamentales:
+
+1. **Capturar información completa** del estudiante en formato digital
+2. **Validar documentos** de identidad y académicos
+3. **Gestionar contratos** legalmente vinculantes mediante firma digital
+4. **Automatizar flujos de aprobación** entre departamentos
+5. **Controlar periodos académicos** y disponibilidad de cupos
+6. **Seguir prospectos** desde su primer contacto hasta la matrícula
+
+### 1.3 ¿Para quién es este módulo?
+- **Asesores educativos**: Capturan información inicial y guían a prospectos
+- **Coordinadores académicos**: Revisan y validan información académica
+- **Personal administrativo**: Gestionan documentos y contratos
+- **Directores de programa**: Aprueban admisiones finales
+- **Personal financiero**: Verifican información de pago
+
+---
+
+## 2. Acceso al Módulo
+
+### 2.1 Cómo Ingresar
+Para acceder al módulo de Inscripción, siga estos pasos:
+
+1. **Inicie sesión** en el sistema ASM con sus credenciales autorizadas
+2. En el **menú principal de navegación** (ubicado en el lado izquierdo)
+3. **Busque y haga clic** en la opción **"Inscripción"**
+
+### 2.2 Estructura del Módulo
+Una vez dentro del módulo, el sistema le presentará **ocho secciones principales** organizadas por función:
+
+| Sección | ¿Qué Permite Hacer? | Usuario Típico |
+|---------|-------------------|----------------|
+| **Aprobación Comercial** | Revisar y aprobar fichas completas | Asesor educativo |
+| **Documentos** | Validar documentos cargados | Personal administrativo |
+| **Documentos Rechazados** | Gestionar documentos con problemas | Personal administrativo |
+| **Ficha de Inscripción** | Crear y editar fichas de estudiantes | Asesor educativo |
+| **Firma Digital** | Gestionar contratos electrónicos | Coordinador académico |
+| **Flujos de Aprobación** | Configurar procesos de aprobación | Administrador del sistema |
+| **Periodos de Inscripción** | Gestionar fechas y cupos | Coordinador académico |
+| **Prospectos | ASR** | Seguimiento de pre-inscripciones | Asesor educativo |
+
+### 2.3 Permisos y Roles
+**Atención:** El acceso a cada sección está **restringido según su rol** en el sistema:
+
+- **Asesor educativo**: Acceso completo a Ficha de Inscripción y Prospectos
+- **Coordinador académico**: Acceso a Documentos, Firma Digital y Periodos
+- **Administrador**: Acceso completo a todas las secciones
+- **Personal financiero**: Solo Aprobación Comercial (aspectos financieros)
+
+**Consejo:** Si no ve alguna sección que necesita, contacte al administrador del sistema para solicitar los permisos correspondientes.
+
+---
+
+## 3. Ficha de Inscripción
+
+### ¿Qué es la Ficha de Inscripción?
+La **Ficha de Inscripción** es el **formulario digital completo** que recopila toda la información necesaria sobre un estudiante potencial. Es el **documento maestro** que contiene desde datos personales básicos hasta información financiera detallada.
+
+### Estructura de la Ficha
+La ficha está organizada en **5 pasos secuenciales** que deben completarse en orden:
+
+1. **Datos Personales** → Información básica de identificación
+2. **Datos Laborales** → Situación profesional actual
+3. **Información Académica** → Antecedentes educativos
+4. **Datos Financieros** → Información de pago y costos
+5. **Documentos Requeridos** → Documentación de respaldo
+
+### 3.1 Búsqueda y Listado de Fichas
+
+####  Pantalla Principal
+Cuando ingresa a la sección de Fichas, verá una **pantalla de búsqueda y filtros** que le permite encontrar fichas específicas:
+
+| Elemento | ¿Qué Hace? | Ejemplo de Uso |
+|----------|------------|----------------|
+| **Buscar** | Busca por nombre, programa o ID | "MBA" para ver todos los estudiantes de MBA |
+| **Estado** | Filtra por estado de la ficha | "Incompleta" para ver fichas pendientes |
+| **Prioridad** | Filtra por nivel de urgencia | "Alta" para atender casos urgentes |
+| **Periodo** | Filtra por período académico | "2024-01" para ver fichas de ese período |
+
+####  Listado de Fichas
+Debajo de los filtros, verá una **tabla con todas las fichas** que cumplen con los criterios seleccionados:
+
+| Columna | ¿Qué Información Proporciona? | ¿Por qué es Importante? |
+|---------|------------------------------|-------------------------|
+| **ID** | Número único de identificación | Para referencias internas y seguimiento |
+| **Nombre** | Nombre completo del estudiante | Para identificación rápida |
+| **Programa** | Programa académico seleccionado | Para organización por áreas |
+| **Fecha** | Fecha de creación de la ficha | Para control de antigüedad |
+| **Estado** | Situación actual del proceso | Para saber qué acción tomar |
+| **Prioridad** | Nivel de atención requerida | Para priorizar trabajo |
+| **Última Actualización** | Cuándo se modificó por última vez | Para saber si está activa |
+| **Acciones** | Operaciones disponibles | Para interactuar con la ficha |
+
+**Ejemplo Práctico de Interpretación:**
+| ID | Nombre | Programa | Estado | Prioridad |
+|----|--------|----------|--------|-----------|
+| 2996 | Pablo Andrés Santos González | Bachelor of Business Administration | Media | - |
+
+*Análisis:* Estudiante Pablo González está en proceso de inscripción al BBA, con prioridad media. Necesita atención regular.
+
+### 3.2 Datos Personales
+
+#### ¿Qué son los Datos Personales?
+Son la **información básica de identificación** del estudiante. Esta sección es **obligatoria** y debe completarse primero.
+
+####  Campos Obligatorios:
+| Campo | ¿Por qué es Obligatorio? | Validación Automática |
+|-------|--------------------------|----------------------|
+| **Nombre completo*** | Para certificados y registros oficiales | Verifica que tenga nombre y apellido |
+| **País de origen*** | Para estadísticas institucionales | Lista de países predefinida |
+| **Teléfono móvil*** | Para comunicación urgente | Formato numérico internacional |
+| **DPI/Identificación*** | Para verificación legal de identidad | Solo números, verifica duplicados |
+| **Email personal*** | Para comunicación académica | Formato email válido, verifica dominio |
+| **Email corporativo*** | Para comunicación profesional | Formato email válido |
+| **Fecha de nacimiento*** | Para requisitos de edad mínima | Calendario, verifica mayoría de edad |
+| **Dirección de residencia*** | Para envío de documentos físicos | Texto completo con referencia |
+
+####  Opcional:
+- **Reinscripción**: Marque esta casilla **solo si** el estudiante ya fue alumno de ASM y quiere ingresar a un nuevo programa. Esto activa procesos especiales de validación.
+
+**Consejo de llenado:** 
+- Use **nombres completos** tal como aparecen en documentos oficiales
+- Verifique que los **emails sean correctos** - serán usados para comunicación importante
+- La **dirección debe ser precisa** - puede usarse para envío de diplomas
+
+### 3.3 Datos Laborales
+
+#### ¿Qué son los Datos Laborales?
+Esta sección recopila información sobre la **situación profesional actual** del estudiante. Es importante porque:
+
+1. **Contextualiza** la experiencia del estudiante
+2. **Identifica posibles convenios corporativos**
+3. **Ayuda en asignación de proyectos prácticos**
+
+####  Campos Obligatorios:
+| Campo | ¿Qué Información Proporciona? | Uso Institucional |
+|-------|-----------------------------|-------------------|
+| **Empresa en donde labora*** | Dónde trabaja actualmente | Para convenios corporativos |
+| **Puesto de trabajo*** | Cargo y responsabilidades | Para adecuación curricular |
+| **Teléfono corporativo*** | Contacto en horario laboral | Para coordinación con empresas |
+| **Departamento*** | Área de trabajo | Para networking entre estudiantes |
+| **Dirección de la empresa*** | Ubicación física | Para visitas y vinculación |
+
+**Importancia de cada campo:**
+- **Empresa**: Identifica posibles oportunidades de prácticas o empleo
+- **Puesto**: Ayuda a personalizar el enfoque del programa
+- **Teléfono corporativo**: Para coordinación durante horario laboral
+- **Departamento**: Para agrupar estudiantes por áreas profesionales
+- **Dirección**: Para eventos corporativos o visitas empresariales
+
+### 3.4 Información Académica
+
+#### ¿Qué es la Información Académica?
+Esta sección documenta los **antecedentes educativos** del estudiante y sus **preferencias de estudio**. Determina:
+
+1. **Elegibilidad** para programas específicos
+2. **Requisitos adicionales** necesarios
+3. **Modalidad de estudio** más adecuada
+
+####  Campos Obligatorios:
+| Campo | ¿Qué Define? | Impacto en el Proceso |
+|-------|-------------|----------------------|
+| **Programa*** | Qué va a estudiar | Define requisitos y costo |
+| **Duración (meses)** | Cuánto tiempo durará | Calcula inversión total |
+| **Último título obtenido*** | Nivel educativo máximo | Valida prerrequisitos |
+| **Institución*** | Dónde estudió antes | Para equivalencias |
+| **Modalidad*** | Cómo estudiará | Asigna horarios y recursos |
+| **Mes de inicio*** | Cuándo comenzará | Asigna a cohorte específica |
+| **Días que estudiará*** | Disponibilidad horaria | Crea horario personalizado |
+
+**Explicación de opciones comunes:**
+
+**Programas Disponibles:**
+- **BBA CM**: Bachelor of Business Administration in Commercial Management
+- **BBA BF**: Bachelor of Business Administration in Banking and Fintech  
+- **MHTM**: Master in Human Talent Management
+- **MBA**: Master of Business Administration (programa ejecutivo)
+
+**Modalidades:**
+- **Sincrónica**: Clases en vivo en horarios fijos
+- **Asincrónica**: Estudia a su propio ritmo con fechas límite
+
+**Días de estudio:**
+- Seleccione todos los días en que el estudiante estará disponible
+- Esto afecta la asignación de horarios de clase
+
+####  Opcionales:
+- **Carrera del último título**: Especifica la especialización previa
+- **Año de graduación**: Para estadísticas de experiencia
+- **Cursos aprobados**: Para reconocimiento de créditos
+
+### 3.5 Datos Financieros
+
+#### ¿Qué son los Datos Financieros?
+Esta sección calcula la **inversión total** del programa y documenta el **método de pago**. Es crítica porque:
+
+1. **Establece compromisos económicos**
+2. **Define modalidad de pago**
+3. **Calcula costos adicionales obligatorios**
+
+####  Información de Pago:
+| Campo | ¿Qué Calcula/Define? | Impacto Financiero |
+|-------|---------------------|-------------------|
+| **¿Posee convenio corporativo?*** | Descuentos especiales | Puede reducir costo hasta 30% |
+| **Inscripción (Q)*** | Pago inicial requerido | Se paga al momento de matrícula |
+| **Cuota mensual (Q)*** | Pago recurrente mensual | Define presupuesto del estudiante |
+| **Cantidad en meses** | Duración del programa | Se calcula automáticamente |
+| **Inversión total (Q)** | Suma total del programa | Incluye todos los pagos |
+| **Modalidad de pago*** | Cómo pagará | Define proceso administrativo |
+
+**Cálculo Automático:**
+Inversión total = Inscripción + (Cuota mensual × Cantidad de meses)
+
+
+**Modalidades de pago disponibles:**
+- **Débito automático**: Descuento directo de cuenta
+- **Depósito bancario**: En ventanilla bancaria
+- **Transferencia electrónica**: Vía banca en línea
+- **Tarjeta de crédito**: Pagos con tarjeta
+
+####  Inversión Adicional Obligatoria:
+
+**¿Por qué hay costos adicionales?**
+Estos son **gastos administrativos y de servicios** que no están incluidos en la matrícula regular.
+
+**Gastos finales (obligatorios al final del programa):**
+| Concepto | Transferencia/Depósito | Otro método | ¿Qué Cubre? |
+|----------|----------------------|-------------|-------------|
+| **Proyecto final** | Q1,600.00 | Q1,760.00 | Evaluación y asesoría de proyecto final |
+| **Graduación** | Q2,845.00 | Q3,129.50 | Ceremonia, toga, birrete, diploma físico |
+| **Gastos de Título (1)** | Q3,999.00 | Q4,398.90 | Emisión y registro oficial del título |
+| **Certificación internacional** | Q2,000.00 | Q2,200.00 | Certificación con validez internacional |
+
+**Servicios electrónicos (según duración del programa):**
+| Programa | Transferencia/Depósito | Otro método | ¿Qué Incluye? |
+|----------|----------------------|-------------|--------------|
+| **8 cursos** | Q362.00 | Q398.20 | Plataforma virtual, biblioteca digital |
+| **12 cursos** | Q598.00 | Q657.80 | + Acceso a bases de datos académicas |
+| **18 cursos** | Q897.00 | Q986.70 | + Software especializado |
+| **24 cursos** | Q1,251.00 | Q1,376.10 | + Certificaciones adicionales |
+
+**Nota importante:** Los precios con **Transferencia/Depósito** tienen 10% de descuento por pago anticipado.
+
+### 3.6 Documentos Requeridos
+
+#### ¿Qué son los Documentos Requeridos?
+Son los **archivos digitales** que el estudiante debe cargar para comprobar la información proporcionada. Sin estos documentos, **no se puede completar la inscripción**.
+
+####  Documentos Obligatorios:
+| Documento | ¿Para qué Sirve? | Requisitos Técnicos |
+|-----------|-----------------|-------------------|
+| **Comprobante de Pago*** | Verifica pago de inscripción | PDF, JPG o PNG ≤5MB |
+| **Número de Boletas/Referencia*** | Identifica transacción bancaria | Solo números, sin espacios |
+| **Banco*** | Institución financiera emisora | Selección de lista oficial |
+| **Monto (Q)*** | Verifica monto correcto | Debe coincidir con sistema |
+| **Fecha del Recibo*** | Control de plazo de pago | Dentro de los últimos 7 días |
+| **DPI (ambos lados)*** | Verificación legal de identidad | PDF, JPG o PNG ≤5MB |
+| **Recibo de luz o teléfono*** | Comprobante de domicilio | ≤3 meses de antigüedad |
+| **Fotografía reciente*** | Para credencial y registros | Fondo blanco, formato carné |
+
+**Consejos para documentos:**
+- **DPI**: Deben verse claramente ambos lados
+- **Recibo domiciliar**: Debe mostrar nombre y dirección
+- **Fotografía**: Debe ser reciente (últimos 6 meses)
+- **Comprobante de pago**: Debe coincidir con monto exacto
+
+####  Documentos Opcionales:
+| Documento | ¿Cuándo es Necesario? | Formato Requerido |
+|-----------|----------------------|------------------|
+| **Certificación de cursos aprobados** | Si viene de otra institución | PDF oficial |
+| **Título o diploma** | Para verificación de estudios | PDF escaneado |
+| **Cierre de pensum** | Para programas de continuidad | PDF certificado |
+| **Otros documentos (PDF)** | Casos especiales o adicionales | Cualquier PDF |
+
+####  Requisitos por Programa:
+Diferentes programas tienen **requisitos académicos específicos**:
+
+| Programa | Título diversificado | Cierre de pensum | Cursos aprobados | Explicación |
+|----------|---------------------|------------------|-----------------|-------------|
+| **BBA 8** | Sí | - | 40 | Programa acelerado para quienes ya tienen muchos cursos aprobados |
+| **BBA 12** | Sí | - | 30 | Programa estándar para egresados de diversificado |
+| **BBA 18** | Sí | - | 25 | Programa extendido para quienes necesitan más nivelación |
+| **BBA 24** | Sí | - | 20 | Programa completo desde nivelación básica |
+| **BBA 32** | Sí | - | 20 | Programa integral para quienes inician desde cero |
+
+**Regla general:** A menor cantidad de cursos aprobados previamente, mayor duración del programa BBA.
+
+---
+
+## 4. Contratos de Confidencialidad
+
+### 4.1 ¿Qué son los Contratos de Confidencialidad?
+Son **acuerdos legalmente vinculantes** que establecen los términos y condiciones de la relación estudiante-institución. Tienen **validez legal** y son obligatorios para todos los estudiantes.
+
+### Importancia Legal
+- **Protegen información confidencial** de la institución
+- **Establecen responsabilidades** mutuas
+- **Definen procesos** académicos y administrativos
+- **Cumplen con normativas** de protección de datos
+
+### 4.2 Proceso de Firma Digital
+
+#### 🔹 Sistema de Firmas Electrónicas:
+El proceso sigue un **flujo secuencial de tres pasos**:
+
+1. **Asesor firma primero** - El asesor educativo valida la información
+   - *Verifica* que todos los datos sean correctos
+   - *Confirma* que documentos están completos
+   - *Se compromete* a seguir el caso
+
+2. **Sistema envía email** - Automáticamente al estudiante
+   - *Link único* de firma (válido por 72 horas)
+   - *Instrucciones claras* para firmar
+   - *Recordatorios automáticos* si no firma
+
+3. **Estudiante firma** - Mediante el link recibido
+   - *Firma electrónica* con validez legal
+   - *Recibe copia* firmada automáticamente
+   - *Sistema notifica* al asesor
+
+#### 🔹 Estados del Contrato:
+| Estado | ¿Qué Significa? | Acción Requerida |
+|--------|----------------|------------------|
+| **Pendiente Firma Estudiante** | Asesor ya firmó, esperando estudiante | Enviar recordatorio al estudiante |
+| **Completados** | Ambas partes han firmado | Archivar y proceder con matrícula |
+| **Todos** | Muestra todos los estados | Para revisión general |
+
+#### 🔹 Visualización de Contratos:
+Para encontrar contratos específicos, use los filtros:
+
+| Filtro | ¿Qué Permite Hacer? | Ejemplo de Uso |
+|--------|---------------------|----------------|
+| **Buscar** | Encontrar por nombre o email | "maria.gonzalez@email.com" |
+| **Estado** | Filtrar por situación actual | Solo "Pendiente Firma Estudiante" |
+
+### 4.3 Gestión de Contratos
+
+####  Listado de Contratos:
+La pantalla principal muestra todos los contratos en el sistema:
+
+| Columna | Información Clave | Uso Administrativo |
+|---------|------------------|-------------------|
+| **ID** | Identificador único | Para referencias cruzadas |
+| **Prospecto** | Nombre + email | Para comunicación directa |
+| **Asesor** | Responsable del caso | Para asignación de responsabilidades |
+| **Estado** | Situación actual | Para priorización de seguimiento |
+| **Firmas** | Progreso (1/2, 2/2) | Para ver avance del proceso |
+| **Fecha Envío** | Cuándo se envió al estudiante | Para control de plazos |
+| **Acciones** | Operaciones disponibles | Para gestión del contrato |
+
+####  Contrato de Confidencialidad - Contenido:
+El contrato incluye **seis áreas críticas** de acuerdo:
+
+**1. Compromiso de confidencialidad**
+- *Qué cubre:* Precios corporativos, materiales exclusivos, métodos de enseñanza
+- *Duración:* Vigente durante y después del programa
+- *Sanciones:* Posible terminación del contrato por violación
+
+**2. Participación obligatoria**
+- *Evento:* Acto de graduación oficial
+- *Requisito:* Asistencia obligatoria para recibir título
+- *Excepciones:* Solo por causas debidamente justificadas
+
+**3. Cobro automático**
+- *Autorización:* Débito automático mensual de cuotas
+- *Responsabilidad:* Estudiante debe mantener fondos suficientes
+- *Notificación:* Aviso previo a cada débito
+
+**4. Requisitos académicos para menciones honoríficas**
+El sistema de reconocimientos sigue estándares internacionales:
+
+| Mención Honorífica | Promedio Requerido | Requisitos Adicionales |
+|-------------------|-------------------|------------------------|
+| **Cum Laude** | 96 puntos | Conducta intachable |
+| **Magna Cum Laude** | 97-98 puntos | + Participación destacada |
+| **Summa Cum Laude** | 99-100 puntos | + Contribución excepcional |
+
+**5. Ética e integridad académica**
+- *Originalidad:* Prohibición absoluta de plagio
+- *Colaboración:* Normas para trabajo en equipo
+- *Conducta:* Comportamiento profesional en todo momento
+
+**6. Pagos y comunicación financiera**
+Canales autorizados para envío de boletas:
+- **Email oficial:** contabilidad@american-edu.com
+- **WhatsApp corporativo:** +502 418 8467 o +502 418 8167
+- **Portal del estudiante:** Acceso 24/7 a estados de cuenta
+
+**Consejo importante:** Antes de enviar el contrato, verifique que todos los datos del estudiante sean correctos, ya que una vez firmado, los cambios requieren proceso formal de modificación.
+
+---
+
+## 5. Documentos
+
+### 5.1 ¿Qué es la Gestión de Documentos?
+Es el **sistema de validación y almacenamiento** de todos los documentos cargados por los estudiantes. Asegura que:
+
+1. **Documentos sean legítimos** y cumplan requisitos
+2. **Información sea consistente** entre diferentes documentos
+3. **Archivos estén seguros** y accesibles cuando se necesiten
+
+### 5.2 Revisión y Validación
+
+####  Pantalla de Revisión:
+Los revisores de documentos acceden a una **interfaz especializada**:
+
+| Filtro | Función | Impacto en el Proceso |
+|--------|---------|----------------------|
+| **Buscar por nombre** | Encontrar documentos de estudiante específico | Acelera revisión de casos conocidos |
+| **Tipo** | Filtrar por tipo de documento | Permite revisión especializada por área |
+
+####  Estados de Documentos:
+Cada documento puede estar en uno de tres estados:
+
+| Estado | ¿Qué Indica? | Acción del Revisor |
+|--------|-------------|-------------------|
+| **Pendientes** | Esperando revisión | Debe revisar y decidir |
+| **Aprobados** | Validados correctamente | Ninguna, proceso completado |
+| **Rechazados** | Problemas encontrados | Debe explicar motivo |
+
+####  Listado de Documentos:
+La pantalla muestra documentos organizados por estudiante:
+
+| Estudiante | Tipo | Fecha | Estado | Acciones |
+|------------|------|-------|--------|----------|
+| Josue Pedroza | american | 1/12/2005 | Pendiente | Ver Documento |
+| Josue Pedroza | dpi | 1/12/2005 | Pendiente | Ver Documento |
+
+**Proceso de revisión típico:**
+1. **Seleccionar** documento pendiente
+2. **Abrir** y examinar cuidadosamente
+3. **Verificar** que cumpla todos los requisitos
+4. **Decidir**: Aprobar o Rechazar
+5. **Si rechaza**: Explicar claramente el motivo
+
+### 5.3 Documentos Rechazados
+
+#### ¿Qué son los Documentos Rechazados?
+Son documentos que **no cumplen con los requisitos** y requieren corrección por parte del estudiante.
+
+####  Reenvío de Documentos:
+Cuando un documento es rechazado:
+
+1. **El sistema notifica** automáticamente al estudiante
+2. **Explica el motivo** del rechazo
+3. **Proporciona instrucciones** para corrección
+4. **Permite nueva carga** del documento corregido
+
+**Motivos comunes de rechazo:**
+- **Documento ilegible**: Escaneo de baja calidad
+- **Información incompleta**: Faltan páginas o datos
+- **Documento vencido**: Pasó fecha de validez
+- **Inconsistencias**: No coincide con información proporcionada
+- **Formato incorrecto**: No es PDF, JPG o PNG
+
+**Proceso del estudiante para reenvío:**
+1. **Recibe notificación** de rechazo
+2. **Corrige el problema** identificado
+3. **Vuelve a cargar** documento corregido
+4. **Sistema lo pone** nuevamente en "Pendientes"
+
+**Consejo para revisores:** Sea específico en los comentarios de rechazo. En lugar de "documento ilegible", diga "la foto del DPI está borrosa, por favor escanee a 300 DPI".
+
+---
+
+## 6. Flujos de Aprobación
+
+### 6.1 ¿Qué son los Flujos de Aprobación?
+Son **procesos automatizados** que definen cómo una inscripción se mueve a través de diferentes etapas de revisión y aprobación. Son como **carreteras predefinidas** que guían cada solicitud.
+
+### Beneficios de los Flujos
+- **Consistencia**: Todos los casos siguen el mismo proceso
+- **Responsabilidad clara**: Cada persona sabe su rol
+- **Transparencia**: Se puede ver en qué etapa está cada caso
+- **Eficiencia**: Reducción de tiempos de procesamiento
+
+### 6.2 Listado de Flujos
+
+####  Flujos Preconfigurados:
+El sistema viene con **cinco flujos estándar** que cubren la mayoría de los casos:
+
+| Nombre del Flujo | Aplicable a | Etapas | Estado | Tiempo Promedio | ¿Cuándo Usarlo? |
+|------------------|-------------|--------|--------|-----------------|-----------------|
+| **Inscripción Estándar** | Todos los Programas | 3 | Activo | 48 horas | Casos normales sin complejidades |
+| **Inscripción Maestrías** | Maestrías | 4 | Activo | 72 horas | Programas de posgrado |
+| **Inscripción Diplomados** | Diplomados | 2 | Activo | 24 horas | Cursos cortos especializados |
+| **Inscripción Becados** | Programas Específicos | 5 | Inactivo | 96 horas | Casos con becas o descuentos especiales |
+| **Inscripción Rápida** | Cursos Cortos | 1 | Activo | 12 horas | Cursos express o de actualización |
+
+**Explicación de columnas:**
+- **Etapas**: Número de revisiones requeridas
+- **Estado**: Si está disponible para uso
+- **Tiempo Promedio**: Duración típica del proceso
+- **Acciones**: Qué puede hacer con cada flujo
+
+### 6.3 Creación de Nuevo Flujo
+
+#### ¿Cuándo Crear un Nuevo Flujo?
+Debe crear un nuevo flujo cuando:
+- **Nuevo tipo de programa** con requisitos diferentes
+- **Cambios en políticas** institucionales
+- **Necesidad de optimizar** procesos existentes
+- **Requerimientos legales** o regulatorios nuevos
+
+####  Formulario de Creación:
+| Campo | ¿Qué Define? | Consideraciones Importantes |
+|-------|-------------|---------------------------|
+| **Nombre del Flujo*** | Cómo se identificará | Use nombres descriptivos |
+| **Descripción** | Para qué sirve este flujo | Sea claro para otros usuarios |
+| **Aplicable a*** | Qué programas usan este flujo | Seleccione cuidadosamente |
+| **Flujo Activo** | Si está disponible | Inactivo para flujos en desarrollo |
+| **Aprobaciones en Paralelo** | Múltiples revisiones simultáneas | Acelera proceso pero requiere coordinación |
+| **Auto-escalamiento por Tiempo** | Notifica a superiores si hay retraso | Para evitar cuellos de botella |
+
+####  Configuración de Etapas:
+Cada flujo tiene **etapas secuenciales** que definen el proceso:
+
+**Etapa 1: Aprobación Comercial (Obligatoria para todos)**
+- **Propósito**: Verificar viabilidad comercial
+- **Rol Aprobador**: Gerente comercial o similar
+- **Tiempo Máximo**: 24 horas (1 día hábil)
+- **Notificación**: Sí, para mantener informado al estudiante
+
+**Etapa 2: Aprobación Financiera (Obligatoria para todos)**
+- **Propósito**: Validar capacidad de pago
+- **Rol Aprobador**: Coordinador financiero
+- **Tiempo Máximo**: 48 horas (2 días hábiles)
+- **Notificación**: Sí, especialmente si hay observaciones
+
+**Etapa 3: Aprobación Académica (Obligatoria para todos)**
+- **Propósito**: Verificar elegibilidad académica
+- **Rol Aprobador**: Director del programa
+- **Tiempo Máximo**: 72 horas (3 días hábiles)
+- **Notificación**: Solo si hay requisitos adicionales
+
+**Etapas Adicionales (según flujo):**
+- **Aprobación de Becas**: Para casos con financiamiento especial
+- **Revisión Legal**: Para contratos complejos
+- **Aprobación Directiva**: Para casos excepcionales
+
+**Consejo de configuración:** Configure tiempos realistas considerando la carga de trabajo de cada rol. Tiempos muy cortos generarán estrés, tiempos muy largos ralentizarán el proceso.
+
+---
+
+## 7. Periodos de Inscripción
+
+### 7.1 ¿Qué son los Periodos de Inscripción?
+Son **ventanas de tiempo definidas** durante las cuales los estudiantes pueden inscribirse en programas académicos. Funcionan como **ciclos académicos** que organizan la oferta educativa.
+
+### Importancia de los Periodos
+1. **Planificación académica**: Define cuándo inician las clases
+2. **Control de cupos**: Limita cantidad de estudiantes por ciclo
+3. **Organización logística**: Coordina recursos humanos y físicos
+4. **Marketing educativo**: Define campañas de promoción
+
+### 7.2 Administración de Periodos
+
+####  Administración de Periodos:
+La pantalla principal permite **gestionar todos los periodos** del sistema:
+
+| Campo | Función | Impacto en la Operación |
+|-------|---------|-------------------------|
+| **Buscar** | Encontrar periodos específicos | Para revisión rápida |
+| **Estado** | Filtrar por actividad | Ver solo periodos activos |
+| **Desde/Hasta** | Rango de fechas | Análisis histórico |
+| **Nuevo Periodo** | Crear nuevo ciclo | Expansión de oferta |
+
+####  Listado de Periodos:
+| Columna | Información | Importancia Administrativa |
+|---------|------------|---------------------------|
+| **Periodo** | Nombre identificativo | Para comunicación a estudiantes |
+| **Inicio** | Fecha de apertura | Define inicio de clases |
+| **Fin** | Fecha de cierre | Último día para inscribirse |
+| **Estado** | Activo/Inactivo | Controla disponibilidad |
+| **Cupos** | Cantidad disponible | Evita sobrecupos |
+| **Acciones** | Gestión del periodo | Mantenimiento del sistema |
+
+####  Creación de Nuevo Periodo:
+| Campo | ¿Qué Define? | Consideraciones de Configuración |
+|-------|-------------|---------------------------------|
+| **Nombre*** | Identificación del periodo | Use formato estándar: "2024-01" |
+| **Código*** | Identificador único interno | Para integración con otros sistemas |
+| **Inicio*** | Cuándo abren inscripciones | Coordinar con calendario académico |
+| **Fin*** | Cuándo cierran inscripciones | Dejar tiempo para procesamiento |
+| **Cupos Total** | Capacidad máxima | Basado en recursos disponibles |
+| **Descuento** | Incentivo por inscripción temprana | Para estimular inscripciones anticipadas |
+| **Visible** | Si los estudiantes lo ven | Ocultar periodos en preparación |
+| **Notificaciones** | Alertas automáticas | Para recordar fechas clave |
+
+**Ejemplo de configuración típica:**
+- **Nombre**: "2024-02" (segundo período de 2024)
+- **Código**: "ASM-2024-02"
+- **Inicio**: 01/04/2024
+- **Fin**: 30/06/2024
+- **Cupos**: 150 (basado en capacidad de aulas)
+- **Descuento**: 10% para inscripciones antes del 15/05/2024
+
+**Consejos de planificación:**
+1. **Solapar periodos**: Que el próximo período abra antes de que cierre el actual
+2. **Considerar vacaciones**: Evitar períodos que terminen en diciembre
+3. **Coordinación internacional**: Alinear con calendarios de instituciones afiliadas
+4. **Flexibilidad**: Dejar algunos cupos para inscripciones tardías justificadas
+
+---
+
+## 8. Prospectos | ASR
+
+### 8.1 ¿Qué es la Gestión de Prospectos?
+Es el **sistema de seguimiento** de personas interesadas en los programas de ASM que aún no han completado su inscripción. ASR significa "**A**lmacenamiento **S**eguro de **R**eservas".
+
+### Objetivos del Seguimiento de Prospectos
+1. **Convertir interés en inscripción**
+2. **Mantener comunicación proactiva**
+3. **Identificar patrones de deserción**
+4. **Optimizar estrategias de captación**
+
+### 8.2 Listado de Prospectos Pendientes
+
+####  Listado de Prospectos Pendientes:
+La pantalla muestra **todos los prospectos activos** con su estado actual:
+
+| Columna | Información Clave | Uso para Seguimiento |
+|---------|------------------|---------------------|
+| **Nombre** | Identificación del prospecto | Para comunicación personalizada |
+| **Email** | Canal principal de contacto | Para envío de información |
+| **Estado** | Situación en el proceso | Para definir siguiente acción |
+| **Contrato** | Estado del acuerdo | Para priorizar seguimiento |
+| **DPI** | Validación de identidad | Para completar requisitos |
+| **RECIBO AMERICAN** | Comprobante de pago | Para verificar compromiso económico |
+| **INSCRIPCION** | Proceso general | Para ver avance global |
+| **Acciones** | Operaciones disponibles | Para gestión activa |
+
+####  Estados Comunes:
+| Estado | ¿Qué Significa? | Acción Recomendada |
+|--------|----------------|-------------------|
+| **Preinscripción** | Información básica registrada | Contactar para completar ficha |
+| **Pendiente Firma Estudiante** | Esperando firma de contrato | Enviar recordatorio del link |
+| **Pendiente Aprobación** | En proceso de revisión interna | Verificar estado con revisores |
+| **Sin meta** | Sin objetivo académico definido | Agendar llamada de asesoría |
+| **Documentos Pendientes** | Faltan documentos por cargar | Enviar lista específica de faltantes |
+| **Pendiente Pago** | Esperando pago de inscripción | Recordar métodos y plazos |
+
+**Estrategias de seguimiento efectivo:**
+1. **Contacto temprano**: Contactar dentro de las primeras 24 horas
+2. **Personalización**: Usar nombre y programa de interés
+3. **Seguimiento sistemático**: Contactar cada 3-5 días
+4. **Identificar obstáculos**: Preguntar directamente por bloqueos
+5. **Ofrecer ayuda**: Proactivamente resolver dudas
+
+**Sistema de priorización automático:**
+El sistema **asigna colores** según tiempo sin contacto:
+- **🟢 Verde**: Contactado en últimos 3 días
+- **🟡 Amarillo**: 4-7 días sin contacto
+- **🔴 Rojo**: Más de 7 días sin contacto
+
+**Consejo para asesores:** Use la función de "Notas" para registrar cada contacto. Esto crea historial útil y permite continuidad si otro asesor toma el caso.
+
+---
+
+## 9. Consideraciones Importantes
+
+###  Aspectos Clave del Módulo:
+
+1. **Secuencia Obligatoria**: Los 5 pasos de la ficha **deben completarse en orden**. No puede saltar pasos porque:
+   - Los datos de cada paso validan información para el siguiente
+   - Algunos cálculos dependen de información previa
+   - El sistema requiere coherencia en todo el proceso
+
+2. **Validación en Tiempo Real**: 
+   - **Errores se muestran inmediatamente** mientras escribe
+   - **Sugerencias automáticas** para datos comunes
+   - **Prevención de duplicados** en información crítica
+
+3. **Documentos Obligatorios**: 
+   - **Sin documentos no hay inscripción** - es política institucional
+   - **Todos los documentos** deben ser legibles y actuales
+   - **Verificación cruzada** entre documentos e información proporcionada
+
+4. **Firma Digital Requerida**:
+   - **Validez legal completa** - equivalente a firma física
+   - **Proceso bidireccional** - ambas partes deben firmar
+   - **Archivo automático** - copias seguras para ambas partes
+
+5. **Flujos de Aprobación**:
+   - **Personalizados por programa** - no todos son iguales
+   - **Tiempos definidos** para cada etapa
+   - **Notificaciones automáticas** a aprobadores
+
+6. **Periodos Activos**:
+   - **Solo inscripciones en periodos vigentes**
+   - **Cupos limitados** - por orden de completitud
+   - **Descuentos por prontitud** - incentivo temprano
+
+###  Seguridad y Confidencialidad:
+
+1. **Protección de Datos Personales**:
+   - **Cumplimiento con LOPD** (Ley Orgánica de Protección de Datos)
+   - **Encriptación de datos sensibles** (DPI, direcciones, teléfonos)
+   - **Acceso restringido** según necesidad de conocer
+
+2. **Seguridad de Documentos**:
+   - **Almacenamiento en servidores seguros** con backup diario
+   - **Control de versiones** - histórico de cada documento
+   - **Acceso auditado** - registro de quién ve qué y cuándo
+
+3. **Validez Legal de Firmas Digitales**:
+   - **Certificado digital** con entidad certificadora autorizada
+   - **Sello de tiempo** - prueba de cuándo se firmó
+   - **Integridad garantizada** - imposible modificar después de firmar
+
+4. **Control de Accesos por Roles**:
+   - **Permisos granulares** - no todo el mundo ve todo
+   - **Autenticación de dos factores** para roles sensibles
+   - **Sesiones temporales** - cierre automático por inactividad
+
+###  Soporte y Contacto:
+
+**Canales de Soporte Organizados por Tipo de Problema:**
+
+| Tipo de Problema | Canal Recomendado | Tiempo de Respuesta | Información Necesaria |
+|-----------------|------------------|---------------------|----------------------|
+| **Problemas técnicos** | Departamento de TI (ext. 555) | 2-4 horas | Captura de pantalla, pasos para reproducir |
+| **Dudas sobre documentos** | Asesor educativo asignado | 24 horas | ID de estudiante, tipo de documento |
+| **Problemas de pago** | contabilidad@american-edu.com | 24-48 horas | Número de referencia, comprobante |
+| **Problemas de firma digital** | firma-digital@asm.edu | 4-8 horas | ID de contrato, email del estudiante |
+| **Dudas sobre flujos** | administracion@asm.edu | 48 horas | Nombre del flujo, etapa problemática |
+| **Problemas con periodos** | coordinacion@asm.edu | 24 horas | Nombre del período, problema específico |
+
+**WhatsApp Corporativo para Comunicación Rápida:**
+- **Número principal**: +502 418 8467
+- **Número secundario**: +502 418 8167
+- **Horario de atención**: Lunes a viernes, 8:00 AM - 6:00 PM
+- **Uso recomendado**: Consultas breves, envío de comprobantes
+
+**Proceso de Escalamiento:**
+1. **Primer nivel**: Asesor educativo o coordinador inmediato
+2. **Segundo nivel**: Departamento correspondiente (TI, Finanzas, Académico)
+3. **Tercer nivel**: Director del área afectada
+4. **Cuarto nivel**: Gerencia o administración del sistema
+
+**Consejo para reportar problemas:** Sea específico y proporcione toda la información relevante desde el primer contacto. Esto acelera significativamente la resolución.
+
+---
+
+*Nota: Este manual es propiedad intelectual del American School of Management. Su distribución está restringida a personal autorizado.*
