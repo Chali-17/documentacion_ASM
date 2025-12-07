@@ -28,6 +28,10 @@ export default defineConfig({
           label: "Modulo Academico",
           autogenerate: { directory: "academico" },
         },
+        {
+          label: "Prospectos y Asesores",
+          autogenerate: { directory: "prospectos-asesores" },
+        },
       ],
       social: [
         {
