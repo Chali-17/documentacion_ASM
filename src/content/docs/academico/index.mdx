@@ -1,0 +1,42 @@
+---
+title: Modulo Academico
+description: Documentacion del modulo academico del ASM Dashboard.
+---
+
+import { Card, CardGrid } from '@astrojs/starlight/components';
+
+## Introduccion
+
+El modulo academico centraliza la gestion educativa: aprobaciones, asignacion de cursos, credenciales, estatus de estudiantes, migraciones y sincronizacion con Moodle.
+
+### Modulos principales
+
+<CardGrid stagger>
+  <Card title="Aprobacion Academica" icon="check">
+    Revisa y aprueba fichas de inscripcion con busqueda y prioridad.
+  </Card>
+  <Card title="Asignacion de Cursos" icon="list">
+    Asigna cursos a estudiantes con filtros, masivos y exportes.
+  </Card>
+  <Card title="Envio Masivo de Usuarios" icon="send">
+    Genera credenciales, envia correos y fuerza cambio de contrasena.
+  </Card>
+  <Card title="Estatus Academico" icon="info">
+    Consulta estados, filtra y exporta listados con detalle por alumno.
+  </Card>
+  <Card title="Gestion de Usuarios" icon="user">
+    Genera carnets, plantillas y envia credenciales en 3 pasos.
+  </Card>
+  <Card title="Migrar Estudiantes" icon="upload">
+    Importa estudiantes desde CSV/Excel con validacion y reportes.
+  </Card>
+  <Card title="Moodle" icon="external">
+    Sincroniza cursos y usuarios con Moodle via API.
+  </Card>
+  <Card title="Programacion de Cursos" icon="calendar">
+    Gestiona catalogo de cursos, filtros, estados y creacion.
+  </Card>
+  <Card title="Programas Academicos" icon="open-book">
+    Administra programas, planes de pago y requisitos.
+  </Card>
+</CardGrid>
