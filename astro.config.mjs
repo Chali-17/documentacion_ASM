@@ -22,7 +22,16 @@ export default defineConfig({
         },
         {
           label: "Modulo de Seguridad",
-          autogenerate: { directory: "seguridad" },
+          items: [
+            "seguridad",
+            "seguridad/dashboard",
+            "seguridad/accesos",
+            "seguridad/auditoria",
+            "seguridad/permisos",
+            "seguridad/roles",
+            "seguridad/sesiones",
+            "seguridad/usuarios",
+          ],
         },
         {
           label: "Modulo Academico",
