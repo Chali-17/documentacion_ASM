@@ -10,28 +10,29 @@ slug: "modulos-maria/finanzas"
 
 <div align="center">
 
-#  **Manual de Usuario – Módulo Finanzas y Pagos**
-### **American School of Management**
-**Versión 2.1 | Actualizado 2024**
-
 ---
 
 ##  **Índice General**
 </div>
 
-- [1. Introducción](#1-introducción)
-- [2. Acceso al Módulo](#2-acceso-al-módulo)
-- [3. Submódulos del Sistema](#3-submódulos-del-sistema)
-- [4. Reportes Financieros](#4-reportes-financieros)
-- [5. Generación Masiva de Cuotas](#5-generación-masiva-de-cuotas)
-- [6. Comunicación y Mensajería](#6-comunicación-y-mensajería)
-- [7. Glosario](#7-glosario)
+- [1. Módulo: Aprobación Financiera](#1-módulo-aprobación-financiera)
+- [2. Módulo: Conciliación Bancaria](#2-módulo-conciliación-bancaria)
+- [3. Módulo: Configuración](#3-módulo-configuración)
+- [4. Módulo: Dashboard Financiero](#4-módulo-dashboard-financiero)
+- [5. Módulo: Estado de Cuenta](#5-módulo-estado-de-cuenta)
+- [6. Módulo: Gestión de Pagos](#6-módulo-gestión-de-pagos)
+- [7. Módulo: Mantenimientos Financieros](#7-módulo-mantenimientos-financieros)
+- [8. Módulo: Notas de Pagos](#8-módulo-notas-de-pagos)
+- [9. Flujos Principales](#9-flujos-principales)
+- [10. Seguridad y Administración](#10-seguridad-y-administración)
+- [11. Reportes y Exportaciones](#11-reportes-y-exportaciones)
+- [12. Conclusión](#12-conclusión)
 
 ---
 
 <div align="center">
 
-# 1. **Introducción**
+#  **Introducción**
 </div>
 
 El módulo **Finanzas y Pagos** es el núcleo administrativo encargado de gestionar toda la actividad económica generada por estudiantes del ASM.  
@@ -59,48 +60,29 @@ Este sistema integra todas las herramientas necesarias para garantizar una **ope
 
 <div align="center">
 
-# 2. **Acceso al Módulo**
+#  **Acceso al Módulo**
 </div>
 
 ###  **Cómo ingresar**
 Acceder al módulo es sencillo, pero está protegido según permisos del usuario:
 
 1. Inicie sesión en el sistema ASM.  
-2. Desde el menú lateral izquierdo, seleccione **“Finanzas y Pagos”**.  
+2. Desde el menú lateral izquierdo, seleccione **"Finanzas y Pagos"**.  
 3. Dependiendo de su rol, verá diferentes funcionalidades habilitadas.  
 
 ---
 
-###  **Secciones principales**
-Cada una tiene un propósito específico:
 
-| Icono | Sección | Explicación Ampliada |
-|-------|---------|----------------------|
-| 📋 | **Aprobación Financiera** | Donde se revisan, verifican y aprueban pagos estudiantiles. Punto crítico para evitar fraudes o errores. |
-| 🏦 | **Conciliación Bancaria** | Cruza automáticamente movimientos bancarios vs. internos para validar exactitud. |
-| ⚙️ | **Configuración Financiera** | Ajustes globales del sistema: intereses, descuentos, bancos, parámetros. |
-| 📊 | **Dashboard Financiero** | Panel con indicadores y estadísticas financieras en tiempo real. |
-| 🧾 | **Estado de Cuenta** | Historial completo del estudiante: saldos, pagos, cuotas, mora, referencias. |
-| 💳 | **Gestión de Pagos** | Registro manual, correcciones, ajustes directos a estudiantes. |
-| 🔧 | **Mantenimientos** | Herramientas avanzadas para auditoría, reversión, correcciones masivas. |
+## <span id="1-módulo-aprobación-financiera"></span> 1 **Aprobación Financiera**
 
-> Cada submódulo está diseñado para realizar tareas específicas sin sobrecargar al usuario con información innecesaria.
-
----
-
-<div align="center">
-
-# 3. **Submódulos del Sistema**
-</div>
-
----
-
-# 3.1 **Aprobación Financiera**
-
-Este submódulo es el **corazón operativo** del departamento de finanzas.  
+Este submódulo es el corazón operativo del departamento de finanzas.  
 Aquí se analizan todos los pagos que los estudiantes reportan y se determina su validez.
 
-### 🔍 **Descripción ampliada**
+![Pantalla Aprobación Financiera](./public/aprobacion%20financiera.png)
+*Interfaz de Aprobación Financiera*
+
+
+###  Descripción ampliada
 El usuario podrá:
 
 - Ver todos los pagos en estado *Pendiente*.  
@@ -117,7 +99,7 @@ La aprobación correcta garantiza que el pago se aplique al **Kardex**, lo cual 
 - Acceso a evaluaciones  
 - Emisión de documentos  
 
-###  **Tabla ampliada**
+###  Tabla ampliada
 | Campo | Descripción Detallada |
 |--------|------------------------|
 | **Estudiante** | Identificación completa y carnet (permite validar identidad). |
@@ -130,10 +112,14 @@ La aprobación correcta garantiza que el pago se aplique al **Kardex**, lo cual 
 
 ---
 
-# 3.2 **Conciliación Bancaria**
+## <span id="2-módulo-conciliación-bancaria"></span> 2 **Conciliación Bancaria**
 
 Es la parte más técnica del módulo:  
-**Asegura que lo que aparece en los bancos coincide EXACTAMENTE con los pagos registrados en ASM.**
+Asegura que lo que aparece en los bancos coincide EXACTAMENTE con los pagos registrados en ASM.
+
+![Pantalla Conciliación bancaria](./public/conciliacion%20bancaria.png)
+*Interfaz de la conciliacion bancaria*
+
 
 ###  ¿Por qué es importante?
 - Detecta pagos no reportados.  
@@ -141,7 +127,7 @@ Es la parte más técnica del módulo:
 - Garantiza transparencia contable.  
 - Permite auditorías exactas.  
 
-###  **Ampliación del proceso**
+###  Ampliación del proceso
 1. El banco genera un archivo con los movimientos del día.  
 2. Se carga al sistema.  
 3. El sistema interpreta el archivo automáticamente.  
@@ -155,7 +141,7 @@ Es la parte más técnica del módulo:
    - Sin coincidencia  
    - Erróneos  
 
-###  **Estados explicados**
+###  Estados explicados
 | Estado | Color | Significado Ampliado |
 |--------|--------|----------------------|
 | Importado | 🔵 | El banco envió el registro, pero aún no se validó. |
@@ -168,57 +154,571 @@ Es la parte más técnica del módulo:
 
 ---
 
-# 3.3 **Configuración Financiera**
+## <span id="3-módulo-configuración"></span> 3 **Configuración Financiera**
 
-Este módulo controla **las reglas del juego financiero**.
-
-###  **Ampliación**
-Incluye:
-
-- Parámetros de mora  
-- Porcentaje de interés  
-- Días de gracia  
-- Bancos habilitados  
-- Tipos de pago disponibles  
-- Configuraciones de reportes  
-- Políticas de descuentos institucionales  
-
-Ejemplo:
-
-| Parámetro | Explicación ampliada |
-|-----------|----------------------|
-| **Días de gracia** | Tiempo adicional sin penalización. Mejora la experiencia estudiantil. |
-| **Interés diario de mora** | Penalización por atrasos. Debe ajustarse anualmente. |
-| **Descuento por pronto pago** | Incentivo financiero para evitar mora. |
+### Descripción General
+Este módulo permite administrar las **reglas de pagos, notificaciones y bloqueos** del sistema financiero del American School of Management. Es una herramienta crítica para configurar políticas institucionales relacionadas con pagos, moras, recordatorios y restricciones de acceso.
 
 ---
 
-# 3.4 **Dashboard Financiero**
+## Reglas Generales de Pagos
 
-Vista general para **directores, coordinadores y personal contable**.
+![Reglas Generales de Pagos](./public/reglas-generales.png)
+*Configuración de parámetros básicos del sistema de pagos*
 
-###  **Descripción ampliada**
-Incluye:
+### **Configuración de Pagos**
 
-- Gráficos de ingresos por mes  
-- Listado de estudiantes con mora activa  
-- Tendencias de pagos  
-- Comparación por programa  
-- Indicadores automáticos  
-- Balance general de ingresos vs. pendientes  
+#### Parámetros Configurables:
 
-El dashboard es clave para:
+| Parámetro | Valor | Descripción | Impacto |
+|-----------|-------|-------------|---------|
+| **Día de vencimiento mensual** | 5 | Día del mes en que vencen los pagos mensuales | Todos los pagos se vencerán el día 5 de cada mes |
+| **Monto de recargo por mora (Q)** | 50.00 | Cantidad fija que se cargará automáticamente por pagos atrasados | Q50 adicionales por cada pago atrasado |
+| **Bloquear después de (meses)** | 2 | Número de meses sin pago antes de bloquear la plataforma | 2 meses de mora = bloqueo automático |
 
-- Planificación financiera  
-- Ajustes presupuestarios  
-- Detección temprana de morosidad  
-- Mejora de estrategias de cobranza  
+#### **Configuraciones Adicionales:**
+
+1. **Enviar recordatorios automáticos**
+   - Sistema envía notificaciones automáticas antes del vencimiento
+   - Configurable en pestaña "Notificaciones"
+
+2. **Desbloquear automáticamente después del pago**
+   - Cuando se detecta pago, el sistema desbloquea automáticamente
+   - Sin necesidad de intervención manual
+
+### Consideraciones Importantes:
+
+⚠️ **Advertencia del Sistema:**
+> "Los cambios en estas reglas afectarán a **todos los alumnos** a menos que tengan una excepción configurada. Asegúrese de revisar cuidadosamente antes de guardar."
+
+#### Impacto de Cambios:
+- **Inmediato**: Aplica desde el próximo ciclo de facturación
+- **Retroactivo**: No afecta moras ya generadas
+- **Global**: Aplica a todos los estudiantes sin excepciones
+- **Irreversible**: Requiere confirmación explícita
+
+#### Recomendaciones de Configuración:
+- **Día de vencimiento**: Entre día 5 y 10 para coincidir con ciclos salariales
+- **Recargo por mora**: Balance entre disuasión y razonabilidad
+- **Bloqueo**: 2-3 meses equilibra presión de pago y retención estudiantil
 
 ---
 
-# 3.5 **Estado de Cuenta**
+## Configuración de Notificaciones
 
-El estado de cuenta es **la fuente de verdad financiera del estudiante**.
+![Configuración de Notificaciones](./public/configuracionN.png)
+*Interfaz de gestión de notificaciones automáticas*
+
+### **Vista de Listado**
+
+#### Estructura de la Tabla:
+
+| Columna | Descripción | Ejemplo |
+|---------|-------------|---------|
+| **Descripción** | Nombre identificativo de la notificación | "Recordatorio 3 días antes" |
+| **Tipo** | Canal de envío (Email, SMS, WhatsApp) | Email |
+| **Días Relativos** | Días antes/después del vencimiento | -3 (3 días antes) |
+| **Mensaje** | Contenido de la notificación | "Estimado [nombre], su pago vence en 3 días" |
+| **Acciones** | Operaciones disponibles | Editar / Eliminar |
+
+#### Estado Actual:
+- **"Sin notificaciones configuradas"** - Sistema no tiene notificaciones activas
+- **Mostrando 0 notificaciones configuradas**
+
+### **Creación de Nueva Notificación**
+
+![Formulario Nueva Notificación](./public/nueva-notificacion.png)
+*Formulario para crear nueva notificación automática*
+
+#### **Campos del Formulario:**
+
+1. **Tipo de Notificación:**
+   - **Email**: Notificación por correo electrónico
+   - **SMS**: Mensaje de texto al teléfono móvil
+   - **WhatsApp**: Mensaje a WhatsApp corporativo
+
+2. **Días Relativos:**
+   - **Formato**: Número entero positivo o negativo
+   - **Ejemplos**:
+     - `-7` → 7 días antes del vencimiento
+     - `0` → Día exacto del vencimiento
+     - `+3` → 3 días después del vencimiento
+
+3. **Mensaje Personalizado:**
+   - **Variables disponibles**:
+     - `[nombre]` → Nombre completo del estudiante
+     - `[monto]` → Monto a pagar
+     - `[fecha_vencimiento]` → Fecha de vencimiento
+     - `[dias_restantes]` → Días restantes para pagar
+   - **Ejemplo de mensaje**:
+     ```
+     Estimado [nombre], 
+     Su pago de Q[monto] vence el [fecha_vencimiento]. 
+     Tiene [dias_restantes] días para realizar el pago.
+     ```
+
+#### **Botones de Acción:**
+- **Cancelar**: Descartar cambios y volver al listado
+- **Guardar Notificación**: Crear nueva notificación
+
+### **Estrategias Recomendadas de Notificación:**
+
+| Días Relativos | Propósito | Ejemplo de Mensaje |
+|---------------|-----------|-------------------|
+| **-10 días** | Recordatorio temprano | "Recordatorio: Pago próximo en 10 días" |
+| **-3 días** | Recordatorio próximo | "Pago vence en 3 días - Q[monto]" |
+| **0 días** | Día del vencimiento | "HOY vence su pago de Q[monto]" |
+| **+1 día** | Primer día de mora | "Pago atrasado - Se aplicó recargo de Q50" |
+| **+5 días** | Recordatorio de mora | "Mora de 5 días - Riesgo de bloqueo" |
+| **+15 días** | Alerta de bloqueo | "Bloqueo inminente - Regularice su situación" |
+
+---
+
+##  Reglas de Bloqueo
+
+![Reglas de Bloqueo](./public/bloqueos.png)
+*Configuración de reglas para bloqueo automático de servicios*
+
+### **Listado de Reglas de Bloqueo**
+
+#### Tabla de Reglas Configuradas:
+
+| Nombre | Descripción | Días Después Vencimiento | Servicios Afectados | Estado | Acciones |
+|--------|-------------|--------------------------|-------------------|--------|----------|
+| **Bloqueo de 30 días** | Bloqueo por falta de pago | 20 días | Plataforma, Evaluaciones, Materiales | Activo | Editar / Eliminar |
+
+#### **Contador:**
+- **Mostrando 1 reglas de bloqueo configuradas**
+
+### **Creación de Nueva Regla de Bloqueo**
+
+![Formulario Nueva Regla Bloqueo](./public/nuevo-bloqueo.png)
+*Formulario para crear nueva regla de bloqueo automático*
+
+#### **Campos del Formulario:**
+
+1. **Nombre de la Regla:**
+   - Identificador único y descriptivo
+   - Ejemplo: "Bloqueo después de 30 días"
+
+2. **Descripción:**
+   - Explicación clara del propósito
+   - Ejemplo: "Bloqueo automático por falta de pago después de 30 días de mora"
+
+3. **Días Después de Vencimiento:**
+   - Número de días de tolerancia
+   - Ejemplo: `30` → Bloquea después de 30 días de mora
+
+4. **Servicios Afectados:**
+   - **Plataforma Virtual**: Acceso al sistema de aprendizaje
+   - **Evaluaciones**: Capacidad para presentar exámenes
+   - **Materiales**: Descarga de recursos educativos
+   - **Todos los servicios**: Bloqueo completo
+
+5. **Estado de la Regla:**
+   - **Activa**: Se aplica automáticamente
+   - **Inactiva**: No se aplica, solo para referencia
+
+### Ejemplo de Regla Configurada:
+
+**"Bloqueo de 30 días"**
+- **Descripción**: "Bloqueo por falta de pago después de 20 días de mora"
+- **Condición**: 20 días después del vencimiento
+- **Servicios bloqueados**:
+  - ✅ Plataforma virtual
+  - ✅ Sistema de evaluaciones  
+  - ✅ Materiales educativos
+- **Estado**: Activo
+
+### Proceso Automático de Bloqueo:
+
+Flujo del Sistema:
+Día 0 → Fecha de vencimiento
+Día 1-19 → Período de tolerancia (notificaciones)
+Día 20 → Se aplica bloqueo automático
+Bloqueo afecta: Plataforma + Evaluaciones + Materiales
+Después del pago → Desbloqueo automático en 1-2 horas
+
+---
+
+##  Categorías de Excepción
+
+![Categorías de Excepción](./public/categorias-excepcion.png)
+*Configuración de reglas especiales para grupos específicos*
+
+### **Listado de Categorías Existentes**
+
+#### Tabla de Categorías:
+
+| Nombre | Descripción | Día Vencimiento | Exención Mora | Pagos Parciales | Exención Bloqueo | Estado | Acciones |
+|--------|-------------|----------------|--------------|----------------|-----------------|--------|----------|
+| **Becados** | Test | Día 10 | ✅ Sí | ✅ Sí | ✅ Sí | Activo | Editar |
+| **Prueba** | Test | Día 15 | ✅ Sí | ✅ Sí | ✅ Sí | Activo | Editar |
+
+#### **Contador:**
+- **Mostrando categorías configuradas**
+
+### **Creación de Nueva Categoría**
+
+![Formulario Nueva Categoría](./public/nueva-categoria-excepcion.png)
+*Formulario para crear nueva categoría de excepción*
+
+#### **Campos del Formulario:**
+
+1. **Nombre de la Categoría:**
+   - Ejemplos: "Becados", "Empleados", "Convenios Especiales", "Estudiantes Excelencia"
+
+2. **Descripción:**
+   - Detalle el propósito y criterios de inclusión
+   - Ejemplo: "Estudiantes con beca completa otorgada por mérito académico"
+
+3. **Día de Vencimiento Personalizado:**
+   - **Opcional**: Dejar vacío para usar el general (día 5)
+   - **Ejemplo**: `10` → Vencen el día 10 de cada mes
+   - **Nota**: "Si se especifica, sobrescribe el día de vencimiento general"
+
+4. **Excepciones de Reglas:**
+
+   a) **Exención de Mora:**
+      - Los estudiantes en esta categoría NO pagarán recargos por mora
+      - ✅ Activado = Sin recargos automáticos
+      - ❌ Desactivado = Aplica recargo normal de Q50
+
+   b) **Permitir Pagos Parciales:**
+      - Los estudiantes pueden realizar pagos fraccionados
+      - ✅ Activado = Acepta pagos menores al monto total
+      - ❌ Desactivado = Requiere pago completo
+
+   c) **Exención de Bloqueo:**
+      - Los estudiantes NO serán bloqueados automáticamente
+      - ✅ Activado = Sin bloqueo automático por mora
+      - ❌ Desactivado = Aplica bloqueo según reglas generales
+
+5. **Estado de la Categoría:**
+   - **Activa**: Se aplica a estudiantes asignados
+   - **Inactiva**: No tiene efecto (solo histórico)
+
+
+## <span id="4-módulo-dashboard-financiero"></span> 4 **Dashboard Financiero**
+
+#### Descripción General
+Este módulo proporciona un **panel de control integral** con análisis financiero de la institución desde dos perspectivas clave: estudiantes activos del mes actual y universo completo histórico. Combina datos de Moodle (plataforma académica) con información del CRM (gestión de relaciones con estudiantes).
+
+##  Vista Principal del Dashboard
+
+![Dashboard Principal](./public/dashboard-principal.png)
+*Vista principal con las dos perspectivas de análisis*
+
+#### **Opción 1: Activos del Mes** ✅ Seleccionada por defecto
+- **Enfoque**: Estudiantes con cursos matriculados en el mes actual
+- **Fuente de datos**: Moodle (plataforma académica)
+- **Temporalidad**: Mes en curso
+- **Datos incluidos**:
+  - Estudiantes con cursos activos este mes
+  - Pagos recientes y alertas de mora
+  - Cursos activos por estudiante
+  - Filtros específicos por mes/año
+
+#### **Opción 2: Universo Completo** 🔄 Vista alternativa
+- **Enfoque**: Todos los estudiantes registrados históricamente
+- **Fuente de datos**: Moodle + CRM integrados
+- **Temporalidad**: Histórico completo
+- **Datos incluidos**:
+  - Información de programas inscritos en CRM
+  - Estado financiero histórico: deudas y pagos
+  - Fechas de primera y última matrícula
+  - Estado académico actual
+
+### Métricas Principales en Vista Principal:
+
+| Métrica | Valor | Tendencia | Significado |
+|---------|-------|-----------|-------------|
+| **Estudiantes Activos Este Mes** | 674 | ▲ 0.5% vs mes anterior | Estudiantes con cursos matriculados en diciembre 2025 |
+| **Total Estudiantes (Universo)** | 2,932 | - | Todos los estudiantes registrados históricamente |
+| **Morosos (mes actual)** | 428 | 53.8% de activos | Estudiantes con pagos pendientes este mes |
+| **Al Día (mes actual)** | 223 | 26.0% de activos | Estudiantes con pagos completos al día |
+
+### Selector de Periodo:
+- **Mes actual**: Diciembre 2025 (seleccionado por defecto)
+- **Cambiar mes**: Desplegable para seleccionar otros meses
+- **Cambiar año**: Opción para ver datos históricos por año
+- **Comparativa**: Vista de tendencia vs mes anterior
+
+---
+
+## Estudiantes Activos del Mes
+
+![Estudiantes Activos Mes](./public/estudiantes-activos-mes.png)
+*Listado detallado de estudiantes activos en el mes actual*
+
+### Título y Resumen:
+- **Título**: "Estudiantes Activos en Moodle - Diciembre 2025"
+- **Subítulo**: "674 estudiantes con cursos matriculados este mes"
+- **Resolución mensual estimada**: Q20,810 (ingreso proyectado)
+
+### **Tabla de Estudiantes Activos:**
+
+#### Estructura de Columnas:
+
+| Columna | Descripción | Ejemplo |
+|---------|-------------|---------|
+| **Carnet** | Identificador único del estudiante | `asmt20252814` |
+| **Nombre** | Nombre completo del estudiante | Sandra Elizabeth Ac Chun |
+| **Teléfono** | Número de contacto | 77215148 CRM |
+| **Detalle de Pago** | Información específica de pago | — (vacío o específico) |
+| **Correo** | Email de contacto | sandraac310188@gmail.com |
+| **Programa** | Programa académico actual | LIDERAZ |
+| **Cursos del Mes** | Cursos matriculados este mes | Diciembre 2025 |
+| **Mensualidad** | Monto mensual a pagar | Q1,285 |
+| **Monto Total a Cobrar** | Deuda total actual | Q1,285 |
+| **Primera Matrícula** | Fecha de inicio del estudiante | 15/11/2025 |
+
+#### Ejemplos de Registros:
+1. **Sandra Elizabeth Ac Chun**
+   - Carnet: `asmt20252814`
+   - Programa: LIDERAZ
+   - Mensualidad: Q1,285
+   - Primera matrícula: 15/11/2025
+
+2. **Breiser Neiel Ac Osorio**
+   - Carnet: `asmt20252447`
+   - Programa: MKT BE
+   - Mensualidad: Q1,285
+   - Primera matrícula: 21/11/2025
+
+### Controles de Navegación:
+- **Mostrar**: 20 registros por página (configurable: 10, 20, 50, 100)
+- **Paginación**: "Mostrando 1 - 20 de 674 estudiantes"
+- **Navegación**: "Anterior" ← Página 1 de 34 → "Siguiente"
+
+---
+
+###  **Universo Completo de Estudiantes**
+
+![Universo Completo](./public/universo-completo.png)
+*Vista completa de todos los estudiantes históricos*
+
+### Título y Alcance:
+- **Título**: "Todos los Estudiantes"
+- **Subítulo**: "Universo completo de estudiantes registrados en Moodle con información del CRM"
+- **Total registros**: 2,932 estudiantes
+
+### Tabla de Universo Completo:
+
+
+| Columna | Descripción | Valores posibles |
+|---------|-------------|------------------|
+| **Carnet** | Identificador único | Formato: `asmtXXXXXXXX` |
+| **Nombre + Email** | Nombre completo y correo | Ej: "Yony Darwin Tfd Gómez Yonet1996@hotmail.com" |
+| **Status Moodle** | Estado en plataforma académica | Garantía (Graduado), Garantía (Inscrito), Garantía (Activo), Sin programa |
+| **Cursos Moodle** | Cantidad de cursos en Moodle | Número (0-10+) |
+| **Programas CRM** | Programa registrado en CRM | BBA, MIMED, BBA CM, MBA, etc. |
+| **Estado Pago** | Situación financiera | Pagado, Deuda activa, Moroso, Al día |
+| **Monto Deuda** | Deuda total si aplica | Formato: QXX,XXX.XX |
+| **Fecha Última Matrícula** | Última fecha de registro | Formato: DD/MM/AAAA |
+
+#### **Ejemplos de Registros Completos:**
+1. **Yony Darwin Tfd Gómez**
+   - Carnet: `asmt09221247`
+   - Status: Garantía (Graduado)
+   - Cursos Moodle: 1
+   - Programas CRM: Pagado
+   - Estado: Graduado
+
+2. **Miguel Estuardo Abascal Deliachiesta**
+   - Carnet: `asmt20202099`
+   - Status: Garantía (Graduado)
+   - Cursos Moodle: 8A
+   - Monto: Q37,214.00
+   - Fecha: 22 sept 2023
+
+3. **Geiner Ivan Alvergo Lemus**
+   - Carnet: `asmt20241930`
+   - Status: Garantía (Inscrito)
+   - Cursos Moodle: 5
+   - Programas CRM: BBA - 12
+   - Deuda: Q0.00
+
+### **Distribución por Programa/Carrera:**
+
+![Distribución Programas](./public/distribucion-programas.png)
+*Distribución de estudiantes por programa académico*
+
+| Programa | Total Estudiantes | Activos | Suspensos | Porcentaje |
+|----------|------------------|---------|-----------|------------|
+| **BBA (Todas variantes)** | 1,560 | 326 | 1,165 | 47.6% |
+| **MIMED** | 336 | 89 | 267 | 10.2% |
+| **BBA CM** | 300 | 113 | 179 | 9.1% |
+| **MBA** | 249 | 58 | 162 | 7.6% |
+| **METNI** | 170 | - | - | 5.2% |
+
+**Nota**: Los porcentajes suman más del 100% porque algunos estudiantes tienen múltiples programas.
+
+---
+
+##  Filtros y Búsqueda Avanzada
+
+![Filtros Avanzados](./public/filtros-avanzados.png)
+*Panel completo de filtros para análisis específico*
+
+### Sistema de Búsqueda Principal:
+
+#### Búsqueda por Texto:
+- **Campo**: "Buscar por carnet, nombre, correo o programa..."
+- **Funcionalidad**: Búsqueda en tiempo real
+- **Alcance**: Todos los campos visibles en la tabla
+- **Ejemplos**:
+  - `asmt2025` → Encuentra carnets que empiezan con ese patrón
+  - `@gmail.com` → Filtra por dominio de email
+  - `Sandra` → Busca por nombre
+
+#### Botón de Búsqueda:
+- **Etiqueta**: "Buscar"
+- **Acción**: Ejecuta la búsqueda con criterios ingresados
+- **Reset**: Limpia criterios de búsqueda
+
+### **Filtros por Categoría:**
+
+#### Filtro 1: Programa Académico
+- **Etiqueta**: "Programa"
+- **Valor por defecto**: "Todos los programas"
+- **Opciones disponibles**:
+
+BBA (Todas las variantes)
+BBA 7
+BBA 8
+BBA BF
+BBA CM
+BBA CM 32
+etc
+
+
+#### Filtro 2: Cantidad de Cursos
+- **Etiqueta**: "Cantidad de cursos"
+- **Valor por defecto**: "Todos los cursos"
+- **Opciones específicas**:
+
+1 curso
+2 cursos
+3 cursos
+4 cursos
+
+
+#### Filtro 3: Plan de Estudio
+- **Etiqueta**: "Plan de estudio"
+- **Valor por defecto**: "Todos los planes"
+- **Estado actual**: "Sin filtros aplicados"
+
+#### Filtro 4: Asesor Asignado
+- **Etiqueta**: "Asesor asignado"
+- **Valor por defecto**: "Todos los asesores"
+- **Búsqueda específica**: "Buscar asesor..."
+- **Opciones de ejemplo**:
+
+Pablo Admin
+Sin asesor
+
+
+#### Filtro 5: Estado de Pago del Mes
+- **Etiqueta**: "Estado de pago del mes"
+- **Valor por defecto**: "Todos los estados"
+- **Opciones específicas**:
+
+Pagado este mes
+No pagado este mes
+Al día
+Moroso
+
+
+### Selector de Muestra:
+- **Etiqueta**: "Mostrar"
+- **Opciones**: 10, 20, 50, 100 registros por página
+- **Valor por defecto**: 20
+- **Contador**: "Mostrando 1 - 20 de 674 estudiantes"
+
+### **Filtros para Universo Completo:**
+
+### Filtro de Estado Moodle:
+- **Etiqueta**: "Status Moodle"
+- **Opciones**:
+
+Todos los estados
+
+Garantía (Graduado)
+Garantía (Inscrito)
+Garantía (Activo)
+Sin programa
+
+
+### Filtro de Origen de Datos:
+- **Selector**: Moodle ↔ CRM
+- **Funcionalidad**: Alternar entre fuentes de datos
+- **Integración**: Muestra datos combinados de ambas fuentes
+
+---
+
+### Métricas de Estudiantes:
+
+| KPI | Valor | Cálculo | Interpretación |
+|-----|-------|---------|---------------|
+| **Total Estudiantes Activos** | 674 | Conteo directo de Moodle | Base actual de ingresos recurrentes |
+| **Crecimiento Mensual** | +0.5% | (674 - previo) / previo | Tendencia de captación/retención |
+| **Densidad de Morosidad** | 53.8% | (428 ÷ 674) × 100 | Alto porcentaje requiere atención |
+| **Eficiencia de Cobranza** | 26.0% | (223 ÷ 674) × 100 | Proporción de estudiantes al día |
+
+### Métricas Financieras:
+
+| KPI | Valor | Cálculo | Interpretación |
+|-----|-------|---------|---------------|
+| **Resolución Mensual Estimada** | Q20,810 | Suma(mensualidades × estudiantes) | Ingreso proyectado del mes |
+| **Deuda Total Activa** | QXXXXX | Suma(montos a cobrar) | Exposición financiera actual |
+| **Tasa de Conversión** | XX% | (Pagos recibidos ÷ Total esperado) | Eficiencia del proceso de cobro |
+| **Antigüedad Promedio** | X meses | Promedio(fecha actual - primera matrícula) | Permanencia promedio estudiantil |
+
+### Métricas por Programa:
+
+| Programa | Activos | Suspendidos | % Activos | Ingreso Estimado |
+|----------|---------|-------------|-----------|-----------------|
+| **BBA** | 326 | 1,165 | 21.9% | QXXXXX |
+| **MIMED** | 89 | 267 | 25.0% | QXXXXX |
+| **BBA CM** | 113 | 179 | 38.7% | QXXXXX |
+| **MBA** | 58 | 162 | 26.4% | QXXXXX |
+
+### **Alertas y Notificaciones:**
+- **🚨 Alta morosidad**: 53.8% requiere plan de acción inmediato
+- **📈 Crecimiento positivo**: 0.5% indica buena retención
+- **⚠️ Concentración riesgo**: 47.6% en BBA (diversificar)
+- **✅ Eficiencia moderada**: 26.0% al día (mejorable)
+
+---
+
+## Exportación de Datos
+
+#### Opción 1: Exportar CSV
+- **Formato**: Archivo de valores separados por comas
+- **Usos**: Análisis en Excel, importación a otros sistemas
+- **Contenido**: Todos los datos visibles con filtros aplicados
+- **Ejemplo nombre**: `estudiantes_activos_diciembre_2025.csv`
+
+#### Opción 2: Exportar Excel
+- **Formato**: Archivo Microsoft Excel (.xlsx)
+- **Usos**: Reportes formales, presentaciones ejecutivas
+- **Características**:
+- Formatos predefinidos
+- Fórmulas básicas incluidas
+- Múltiples hojas si aplica
+- **Ejemplo nombre**: `dashboard_financiero_diciembre_2025.xlsx`
+
+
+## <span id="5-módulo-estado-de-cuenta"></span> 5 **Estado de Cuenta**
+
+Documento/resumen completo que muestra la **situación económica actual, histórica y proyectada** de cada estudiante. 
+Incluye saldos, pagos realizados, cuotas pendientes, mora acumulada y referencias de transacciones. 
+Esencial para **validación académica, emisión de documentos y comunicación** objetiva con estudiantes sobre su situación financiera.
+
+![Estado de cuenta](./public/estado-cuenta.png)
+*Interfaz del estado de cuenta modo administracion*
+
 
 Incluye:
 
@@ -233,108 +733,412 @@ Incluye:
 - Validación académica  
 - Control interno  
 - Emisión de documentos  
-- Comunicación con estudiantes  
-- Procesos de graduación  
+- Comunicación con estudiantes 
 
 ---
 
-# 3.6 **Gestión de Pagos**
+## <span id="6-módulo-gestión-de-pagos"></span> 6 **Gestión de Pagos**
 
-###  **Ampliación de propósito**
-Permite registrar, corregir o ajustar pagos manuales cuando:
+![gestion de pago](./public/gestion-pago.png)
+*Panel completo de filtros para análisis específico*
 
-- El banco envía movimientos especiales  
-- Un estudiante es beneficiado con un descuento  
-- Hay errores en el comprobante  
-- Se necesita rectificar un pago previo  
 
-Es un módulo muy delicado y requiere permisos especiales.
+Módulo operativo más usado del departamento de finanzas.
+Permite **seguimiento de morosidad, comunicación estratégica y registro de pagos**.
+Incluye herramientas para monitoreo de pagos atrasados, recordatorios de próximos vencimientos, 
+sistema de mensajería integrado (email/WhatsApp) y contacto masivo o personalizado con estudiantes.
+
+#### Contactar estudiante
+**Ficha de Elvis Ernesto Parson Padilla (ID 2863)**
+
+**Teléfono:** 50499780559  
+**Canal:** Correo  
+**Correo:** e.parsonpadilla.97@gmail.com
+
+**Origen de plantilla:**
+- [ ] Plantillas predefinidas
+- [ ] Plantillas dinámicas (3)
+
+**Plantilla:**
+- [ ] Pago atrasado
+- [ ] Usar mensaje personalizado
+- [ ] Usar editor HTML avanzado
+
+**Asunto:**  
+Recordatorio de pago atrasado - Bachelor of Business Administration in Commercial Management
+
+**Contenido (HTML):**  
+Recordatorio de Pago Atrasado  
+Estimado/a Elvis Ernesto Parson Padilla,  
+Le recordamos que tiene un pago pendiente por **Q114.00** correspondiente a su programa Bachelor of Business Administration in Commercial Management.  
+Para evitar inconvenientes con su acceso a la plataforma, le solicitamos ponerse al día con sus pagos.
 
 ---
 
-# 3.7 **Mantenimientos Financieros**
+## Gestión de Pagos – Contactar y enviar recordatorios
+Secciones:
+- Pagos Atrasados
+- Siguientes pagos
+- Pagos recientes (últimos 30 días)
+- Contactar y mensajería masiva
+
+**Pagos recientes (ejemplos):**
+| Alumno | Programa | Método | Fecha | Monto | Estado |
+|--------|----------|--------|-------|-------|--------|
+| Elvis Ernesto Parson Padilla | Bachelor of Business Administration in Commercial Management | Mensual | 9/12/2025 | Q114.00 | Pagado |
+| Arian Yanina Pineda Hernandez | Bachelor of Business Administration | Mensual | 8/12/2025 | Q885.00 | Pagado |
+| Antonio David Sambrano Pérez | Master of Logistics in Operations Management | Mensual | 8/12/2025 | Q1,285.00 | Pagado |
+
+**Variables disponibles para mensajes:**
+- `nombre`
+- `programa`
+- `monto`
+- `fecha`
+- entre otros.
+
+---
+
+**Módulos relacionados (Finanzas y Pagos):**
+- Dashboard Financiero
+- Estado de Cuenta
+- Conciliación Bancaria
+- Notas de pagos
+- Mantenimientos financieros
+
+## <span id="7-módulo-mantenimientos-financieros"></span> 7 **Mantenimientos Financieros**
+
+![mantenimientos financiera](./public/mantenimientos.png)
+*Panel completo de filtros de mantenimientos financiera*
 
 Este bloque permite realizar operaciones avanzadas:
 
-- Ajustes masivos  
-- Reversión de pagos  
-- Edición de cuotas  
-- Auditorías del Kardex  
-- Correcciones administrativas especiales  
+**Casillas y Funcionalidad:**
 
-Se utiliza **solo bajo supervisión**.
+| Casilla | Descripción Detallada | Función Específica |
+|---------|----------------------|-------------------|
+| **Aplicados** | Número total de pagos que han sido procesados y aplicados a cuotas. | Indicador de salud financiera - muestra cuántos pagos están completos. |
+| **Pendientes** | Pagos registrados pero no conciliados o en proceso de verificación. | Alerta de trabajo pendiente para el equipo financiero. |
+| **Rechazados** | Pagos que fueron denegados (fondos insuficientes, error en datos, etc.). | Identifica problemas recurrentes en métodos de pago. |
+| **Monto neto** | Suma total de todos los pagos aprobados en el período. | Métrica clave para reportes de ingresos. |
+
+### Sección: Tabla de Movimientos
+**Campos de la tabla:**
+
+| Campo | Tipo de Dato | Validación | Función |
+|-------|-------------|------------|---------|
+| **Estudiante** | Texto + ID | Búsqueda inteligente por nombre/carnet | Identifica al titular del pago |
+| **Programa** | Selección predefinida | Vinculado al registro del estudiante | Categoriza el ingreso por programa académico |
+| **Monto** | Decimal (Q) | &gt; 0, formato monetario | Cuantifica el pago |
+| **Fecha** | Fecha | dd/mm/aaaa, no futura | Registra cuándo se efectuó el pago |
+| **Mes/Año** | Generado automático | Extraído de la fecha de pago | Agrupación para reportes mensuales |
+| **Estado** | Dropdown (Aprobado/Pendiente/Rechazado) | Cambios auditable | Control del flujo de trabajo |
+| **Método** | Dropdown (Efectivo/Transferencia/Tarjeta/Mensual) | - | Análisis de preferencias de pago |
+| **Conciliaciones** | Texto + Link | Vinculación 1:1 con registro bancario | Trazabilidad contable |
+| **Acciones** | Botones (Editar/Eliminar/Ver) | Permisos por rol | Gestión individual de registros |
+
+### Formulario: Crear Nuevo Movimiento
+**Campos detallados:**
+
+| Campo | Requerido | Validación | Ejemplo | Propósito |
+|-------|-----------|------------|---------|-----------|
+| **Estudiante y Programa\*** | Sí | Búsqueda en BD activa | "Aarón Rodrigo Jaramillo Escobar (ASM2022990)" | Asegura que el pago se asigne correctamente |
+| **ID Cuota (opcional)** | No | Verifica existencia | "Cuota #10" | Vincula pago a cuota específica para aplicarlo automáticamente |
+| **Monto Pagado\*** | Sí | &gt;0, formato Q ###.## | "Q 1,245.00" | Base para contabilidad |
+| **Método de Pago\*** | Sí | Lista predefinida | "Transferencia Bancaria" | Clasifica tipo de transacción |
+| **Fecha de Pago\*** | Sí | &lt;&equals; fecha actual | "06/12/2025" | Determina período contable |
+| **Estado de Pago\*** | Sí | 3 opciones | "Aprobado" | Define si el dinero está disponible |
+| **Banco** | Condicional | Si método es transferencia | "G&amp;T Continental" | Identifica origen de fondos |
+| **Observaciones** | No | Texto libre (500 chars) | "Pago adelantado por promoción" | Contexto para auditoría |
+| **Fecha de Recibo** | Sí | dd/mm/aaaa | "06/12/2025" | Fecha de comprobante físico |
+| **Número de Boleta** | Sí | Único en sistema | "77856945" | Referencia para conciliación |
+
+### **GESTIÓN DE CUOTAS**
+
+### Sección: Estado de Cuenta por Estudiante
+**Vista individual (Ej: Andrés Neri Aparicio Roldán):**
+
+| Elemento | Cálculo/Origen | Significado |
+|----------|---------------|-------------|
+| **Saldo Pendiente** | Suma(monto cuotas pendientes) - Suma(pagos aplicados) | Deuda total actual del estudiante |
+| **Pendientes** | Count(cuotas donde estado &equals; 'pendiente') | Número de obligaciones por cumplir |
+| **Pagadas** | Count(cuotas donde estado &equals; 'pagado') | Historial de cumplimiento |
+| **Próxima Cuota** | Min(fecha vencimiento donde estado &equals; 'pendiente') | Recordatorio visual de próximo pago |
+
+### Tabla de Cuotas:
+| Columna | Validación | Comportamiento |
+|---------|------------|----------------|
+| **N°** | Secuencial único por estudiante | Identificador interno |
+| **Fecha Vencimiento** | Fecha futura al crear | Define plazo de pago |
+| **Monto** | &gt;0, puede variar por cuota | Define el valor a pagar |
+| **Estado** | Automático al aplicar pagos | Calcula mora automática si fecha pasa |
+| **Fecha Pago** | Se autocompleta al aplicar pago | Registra cuándo se pagó realmente |
+| **Acciones** | ✔️ &equals; pagado, 📝 &equals; editar | Gestión individual |
+
+### Formulario: Nueva Cuota
+| Campo | Lógica de Negocio | Ejemplo |
+|-------|------------------|---------|
+| **Número de Cuota** | Valida que no exista duplicado para ese estudiante | "30" (siguiente disponible) |
+| **Fecha Vencimiento** | Normalmente secuencial (ej: cada mes) | "05/01/2026" |
+| **Monto** | Puede ser fijo o variable según plan | "Q 2,000.00" |
+| **Estado** | Por defecto "Pendiente" | Cambia a "Pagado" automáticamente |
+| **Observaciones** | Para cuotas especiales | "Incluye material de estudio" |
+
+###  ASISTENTE DE REGISTRO DE PAGO (MULTI-ESTUDIANTE)
+
+### Paso 1: Datos Generales del Pago
+| Campo | Detalle Técnico | Propósito Empresarial |
+|-------|----------------|----------------------|
+| **Método de Pago\*** | Dropdown con: Efectivo, Transferencia, Tarjeta, Cheque, Otro | Determina proceso de conciliación |
+| **Fecha\*** | Por defecto fecha actual | Período contable |
+| **Número de Boleta/Referencia\*** | Único en sistema + validación banco | Evita duplicación de ingresos |
+| **Monto Total del Pago\*** | Sumatoria de distribución posterior | Control de integridad |
+| **Checkbox: Distribuir entre varios** | Si se marca, habilita Paso 2 | Permite un pago cubra múltiples cuotas/estudiantes |
+| **Observaciones** | Texto libre | Para pagos complejos o especiales |
+
+### Paso 2: Distribución del Pago
+| Elemento | Funcionalidad | Validación |
+|----------|--------------|------------|
+| **Monto total** | Mostrado del Paso 1 | Solo lectura |
+| **Distribuido** | Suma automática de montos asignados | Debe igualar Monto total |
+| **Línea de distribución** | Agregable dinámicamente | Hasta cubrir monto total |
+| **Estudiante por línea** | Búsqueda con filtro programa | Evita errores |
+| **Cuota específica** | Dropdown de cuotas pendientes del estudiante | Aplica pago directamente |
+| **Monto a asignar** | Decimal &lt;&equals; saldo pendiente de cuota | Previene sobrepago |
+
+### Paso 3: Confirmación
+| Elemento | Información Mostrada | Acción |
+|----------|---------------------|--------|
+| **Resumen** | Lista de estudiantes y cuotas a pagar | Revisión final |
+| **Opción conciliación automática** | Checkbox para crear registro bancario | Automatiza conciliación |
+| **Botón Finalizar** | Crea: 1) Kardex entries, 2) Actualiza cuotas, 3) (Opcional) Conciliación | Ejecuta transacción |
+
+###  GESTIÓN DE PAGOS Y CONTACTO
+
+### Pestañas de Gestión:
+| Pestaña | Filtro Automático | Destinatarios |
+|---------|------------------|---------------|
+| **Pagos Atrasados** | Estado &equals; pendiente + Fecha &lt; hoy | Estudiantes morosos |
+| **Siguientes Pagos** | Estado &equals; pendiente + Fecha entre hoy y hoy+30 días | Recordatorio preventivo |
+| **Pagos Recientes** | Fecha pago entre hoy-30 y hoy | Seguimiento post-pago |
+| **Contactar** | Todos los estudiantes | Comunicación masiva |
+
+### Tabla de Siguientes Pagos:
+| Columna | Origen de Datos | Uso en Comunicación |
+|---------|----------------|---------------------|
+| **Alumno** | Registro estudiante | Personalización mensaje |
+| **Programa** | Matrícula activa | Contexto académico |
+| **Monto** | Cuota pendiente | Información clave |
+| **Vence** | Fecha vencimiento | Urgencia del mensaje |
+| **Estado** | Calculado (pendiente/en mora) | Tono del mensaje |
+| **Acciones** | Botón "Recordar" | Inicia flujo de contacto |
+
+### Sistema de Contacto:
+Componentes del formulario:
+
+| Componente | Opciones | Funcionalidad |
+|------------|----------|---------------|
+| **Canal** | Correo, WhatsApp, Ambos | Define medio de envío |
+| **Origen plantilla** | Predefinidas (3), Dinámicas | Velocidad vs personalización |
+| **Plantilla** | "Pago atrasado", "Recordatorio", "Confirmación" | Mensaje estandarizado |
+| **Editor HTML** | Alternativa a plantilla | Comunicación personalizada |
+| **Variables** | `{nombre}`, `{programa}`, `{monto}`, `{fecha}` | Personalización automática |
+| **Adjuntos** | PDF, imágenes, documentos | Envío de facturas o instructivos |
+
+# Variables dinámicas disponibles:
+
+- **`{nombre}`** → "Jhoselyn Leticia Garcia Villagrán"
+- **`{programa}`** → "Master of Marketing in Commercial Management"
+- **`{monto}`** → "Q 1,100.00"
+- **`{fecha}`** → "4/12/2025"
+- **`{dias_atraso}`** → "2" (calculado automático)
+
+### CONCILIACIÓN BANCARIA
+
+### Formulario: Nueva Conciliación
+| Campo | Validación | Integración con Kardex |
+|-------|------------|------------------------|
+| **Estudiante/Prospecto** | Búsqueda en tiempo real | Vincula automáticamente si encuentra coincidencia |
+| **Banco\*** | Lista de bancos locales | Categorización financiera |
+| **Referencia\*** | Única por banco+fecha | Evita duplicados bancarios |
+| **Monto\*** | Debe coincidir con algún kardex pendiente | Sugiere vinculaciones |
+| **Fecha\*** | Fecha de transacción bancaria | Coincide con fecha pago |
+| **Estado** | Importado/Conciliado/Pendiente | Flujo de trabajo |
+
+### Tabla de Conciliaciones:
+| Columna | Origen | Propósito |
+|---------|--------|-----------|
+| **Referencia** | Archivo banco o manual | ID bancario |
+| **Monto** | Transacción bancaria | Verificación vs Kardex |
+| **Fecha** | Fecha bancaria | Período contable |
+| **Mes/Año** | Derivado de fecha | Agrupación reportes |
+| **Estudiante** | Vinculación manual/automática | Identifica titular |
+| **Kardex vinculado** | Link al movimiento | Trazabilidad completa |
+
+---
+
+## <span id="8-módulo-notas-de-pagos"></span> 8 **Notas de Pagos**
+
+Registro de **acuerdos especiales, observaciones y seguimientos** que complementan la información numérica del sistema. 
+Crea un **historial narrativo** de situaciones financieras particulares por estudiante. 
+Esencial para mantener contexto, documentar acuerdos y asegurar continuidad operativa ante cambios de personal.
+
+![notas de pagos](./public/notas-pago.png)
+*Panel completo de filtros para análisis específico*
+
+
+### Funcionalidad Específica:
+| Característica | Implementación | Caso de Uso |
+|----------------|----------------|-------------|
+| **Por estudiante** | Relación 1:N (1 estudiante, muchas notas) | Historial de acuerdos |
+| **Nomenclatura opcional** | Categorización interna | "Acuerdo especial", "Promoción", "Problema técnico" |
+| **Sin límite de notas** | Pueden ser múltiples por situación | Seguimiento detallado |
+| **Fecha automática** | Fecha creación + usuario creador | Auditoría interna |
+| **Búsqueda integrada** | Por carnet, nombre, correo, programa | Acceso rápido |
+
+### Tabla de Notas:
+| Columna | Fuente de Datos | Significado |
+|---------|----------------|-------------|
+| **Estudiante** | Registro principal | Sujeto de la nota |
+| **Programa** | Matrícula actual | Contexto académico |
+| **Total Notas** | Count por estudiante | Volumen de gestión |
+| **Última Fecha Pago** | Max(fecha de pago) de kardex | Situación reciente |
+| **Factura Emitida** | Si/No del sistema facturación | Estado documental |
+| **Última Nota** | Max(fecha de creación) de notas | Relevancia temporal |
+
+---
+
+## <span id="9-flujos-principales"></span> 9 **Flujos Principales**
+
+### Flujo 1: Registro de Pago Simple
+
+Estudiante paga → Recibo boleta → Paso 1 (datos generales) →
+Asignar a estudiante específico → Seleccionar cuota →
+Confirmar → Actualiza: 1) Kardex, 2) Estado cuota, 3) Saldo estudiante
+
+
+### Flujo 2: Pago Multi-Cuota/Multi-Estudiante
+
+Recibo transferencia → Paso 1 (marcar "distribuir") →
+Paso 2 (agregar líneas para cada cuota/estudiante) →
+Validar que suma = monto total → Paso 3 (confirmar) →
+Crear múltiples registros kardex vinculados
+
+
+### Flujo 3: Conciliación Bancaria
+
+Importar extracto bancario → Cargar al sistema →
+Buscar coincidencias automáticas → Conciliar manualmente restantes →
+Cerrar período → Reporte de diferencias
+
+
+### Flujo 4: Comunicación de Morosidad
+
+Filtro automático: cuotas vencidas → Seleccionar estudiantes →
+Elegir plantilla "Pago atrasado" → Personalizar con variables →
+Seleccionar canal (Email/WhatsApp) → Enviar → Registrar envío en historial
+
+
+---
+
+## <span id="10-seguridad-y-administración"></span> 10 **Seguridad y Administración**
+
+### Roles del Sistema
+| Rol | Permisos | Accesos |
+|-----|----------|---------|
+| **Administrador Financiero** | Completo | Todos los módulos, ajustes de configuración |
+| **Coordinador Financiero** | Alto | Gestión de pagos, conciliación, reportes |
+| **Asistente Financiero** | Medio | Registro de pagos, consultas, comunicación |
+| **Auditor** | Solo lectura | Consultas, reportes, auditoría de movimientos |
+| **Estudiante** | Limitado | Solo su estado de cuenta y comprobantes |
+
+### Medidas de Seguridad Implementadas
+1. **Autenticación de dos factores** para roles administrativos
+2. **Registro de auditoría** completo de todas las operaciones
+3. **Cifrado de datos sensibles** (información bancaria, comprobantes)
+4. **Backup automático diario** de la base de datos financiera
+5. **Control de sesiones** con tiempo de expiración configurable
+
+---
+
+## <span id="11-reportes-y-exportaciones"></span> 11 **Reportes y Exportaciones**
+
+### Filtros Globales del Sistema:
+| Filtro | Opciones | Afecta a |
+|--------|----------|----------|
+| **Buscar por** | Estudiante, Carnet, Boleta | Todas las tablas |
+| **Fecha desde/hasta** | Calendario | Reportes temporales |
+| **Programa** | Todos los programas activos | Segmentación académica |
+| **Estado** | Todos/Aprobado/Pendiente/Rechazado | Filtro de situación |
+| **Año** | Selector anual | Reportes anuales |
+| **Registros por página** | 10, 25, 50, 100 | Paginación |
+
+#### Métricas del Dashboard:
+| Widget | Fórmula/Origen | Importancia Gerencial |
+|--------|----------------|----------------------|
+| **Cuotas registradas** | Count(todas las cuotas) | Volumen total de obligaciones |
+| **Pendientes** | Count(estado &equals; 'pendiente') | Cartera por cobrar |
+| **En mora** | Count(estado &equals; 'pendiente' AND fecha &lt; hoy) | Riesgo financiero |
+| **Monto pendiente** | Sum(monto donde estado &equals; 'pendiente') | Valor de cartera |
+| **Saldo estimado** | Proyección basada en planes activos | Ingresos futuros |
+| **Planes reestructurados** | Count(planes modificados) | Flexibilidad del sistema |
+
+### **GENERACIÓN MASIVA DE CUOTAS**
+
+### Parámetros de Generación:
+| Parámetro | Validación | Impacto |
+|-----------|------------|---------|
+| **Estudiantes seleccionados** | Múltiple selección | Define alcance de la generación |
+| **Mes Inicio** | Mes válido del año seleccionado | Punto de partida temporal |
+| **Mes Final** | &gt;&equals; Mes Inicio | Duración del plan |
+| **Año** | Año actual o futuro | Contexto temporal |
+| **Monto por Mes** | &gt;0, puede variar por mes | Define valor de cuota |
+| **Estado** | Por defecto "Pendiente" | Situación inicial |
+| **Observaciones** | Aplicadas a todas las cuotas generadas | Nota estándar |
+
+### Proceso de Generación:
+
+Para cada estudiante seleccionado:
+Para cada mes entre Mes Inicio y Mes Final:
+1. Genera número de cuota secuencial
+2. Calcula fecha vencimiento (ej: día 5 de cada mes)
+3. Asigna monto según configuración
+4. Crea registro en estado "Pendiente"
+5. Agrega observaciones estándar
+
+---
+
+## <span id="12-conclusión"></span> 12 **Conclusión**
+
+## CONCLUSIÓN SISTÉMICA
+
+El sistema implementa un **ciclo financiero completo**:
+1. **Planificación**: Generación masiva de cuotas
+2. **Ejecución**: Registro de pagos individuales o masivos
+3. **Control**: Conciliación bancaria y validación
+4. **Seguimiento**: Estado de cuenta y saldos
+5. **Comunicación**: Recordatorios automatizados
+6. **Reporte**: Dashboards y métricas gerenciales
+
+**Valor agregado principal**: Reduce el riesgo crediticio educativo mediante automatización, seguimiento estrecho y comunicación proactiva, mientras mantiene trazabilidad completa para auditoría contable.
 
 ---
 
 <div align="center">
 
-# 4. **Reportes Financieros**
-</div>
-
-Incluye reportes:
-
-- De ingresos  
-- De morosidad  
-- De conciliaciones  
-- De próximos pagos  
-
-Todos **exportables a PDF o Excel**, con estética profesional.
-
----
-
-<div align="center">
-
-# 5. **Generación Masiva de Cuotas**
-</div>
-
-###  **Explicación ampliada**
-Permite crear cuotas para decenas o cientos de estudiantes al mismo tiempo.
-
-El sistema valida:
-
-- Período correcto  
-- Meses consecutivos  
-- Programas elegidos  
-- Estudiantes seleccionados  
-- Montos coherentes  
-
-Antes de confirmar, muestra **un resumen exacto** del impacto financiero.
-
----
-
-<div align="center">
-
-# 6. **Comunicación y Mensajería**
-</div>
-
-Herramienta para enviar:
-
-- Recordatorios de pago  
-- Avisos de mora  
-- Confirmaciones  
-- Mensajes grupales  
-- Notificaciones personalizadas  
-
-Permite segmentar por:
-
-- Programa  
-- Estado financiero  
-- Estado académico  
-- Deuda acumulada  
-
----
-
-<div align="center">
-
-# 7. **Glosario**
-</div>
+## **Glosario de Términos Financieros**
 
 | Término | Definición |
 |---------|------------|
-| **Kardex** | Historial financiero propio del estudiante |
-| **Mora** | Cuota vencida sin pagar |
-| **Conciliación** | Validación banco ↔ sistema |
-| **Referencia** | Código bancario único |
-| **Cuota** | Pago programado mensual o periódico |
+| **Kardex** | Historial financiero completo del estudiante en el sistema |
+| **Mora** | Cuota vencida sin pagar dentro del plazo establecido |
+| **Conciliación** | Proceso de validación banco ↔ sistema para verificar exactitud |
+| **Referencia** | Código bancario único que identifica cada transacción |
+| **Cuota** | Pago programado mensual o periódico del estudiante |
+| **Saldo Pendiente** | Deuda total actual del estudiante con la institución |
+| **Estado de Cuenta** | Documento/resumen de la situación financiera del estudiante |
+| **Dashboard** | Panel de control con métricas e indicadores en tiempo real |
 
 ---
+
+</div>
+
